@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Navigation from './Component/Navigation';
 import Home from './Component/Home';
@@ -21,11 +20,6 @@ import Footer from './Component/Footer';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      
-=======
       <Router>
         <Navigation></Navigation>
         <Switch>
@@ -65,8 +59,6 @@ function App() {
         </Switch>
       </Router>
       <Footer></Footer>
->>>>>>> 4dd27ad3462cc8c5361107af3a33732fe6f90285
->>>>>>> main
     </div>
   );
 }
