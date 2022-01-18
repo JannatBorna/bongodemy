@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, CardGroup, Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Card, Form } from 'react-bootstrap';
 import './Contact.css'
 const Contact = () => {
     return (
@@ -23,7 +23,7 @@ const Contact = () => {
                                             Name
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control className='form-col' type="email" placeholder="Enter your name" />
+                                    <Form.Control className='form-col' type="name" placeholder="Enter your name" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
@@ -39,7 +39,8 @@ const Contact = () => {
                                             Describe Your Problem
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control className='form-col' as="textarea" rows={3} placeholder="Your name and problem should hidden" />
+                                    
+                                    <Form.Control className='form-col' as='textarea'  rows={3} placeholder="Your name and problem should hidden" />
                                 </Form.Group>
                                 <Button className='btn-col' type="submit">
                                     Submit
@@ -56,6 +57,8 @@ const Contact = () => {
                                 <h4>
                                    Location,Number & Mail Address
                                 </h4>
+                                
+    
                             </Card.Title>
                             <Card.Text>
                                 <h6>
@@ -68,7 +71,11 @@ const Contact = () => {
                                 </h5>
                                 <h6>
                                     Jessore,Khulna,Bangladesh
+                                    
                                 </h6>
+                                
+                               
+                                <div className='mapouter'><div className='gmap_canvas'><iframe width="463" height="102" id="gmap_canvas" src="https://maps.google.com/maps?q=East%20Barandi%20Para,jessore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><a href="https://www.embedgooglemap.net">responsive google map</a></div></div>
                             </Card.Text>
                             <Card.Text>
                                 <h5>
@@ -84,7 +91,7 @@ const Contact = () => {
                                     Email <br />
                                 </h5>
                                 <h6>
-                                    bongodemy2019@gmail.com
+                                support@bongodemy.com
                                 </h6>
                             </Card.Text>
                         </Card.Body>
