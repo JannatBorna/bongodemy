@@ -2,12 +2,8 @@
     background: #1E2D40 !important;
 }
 
-/* .contact_section {
-    background-color: #1E2D40;
-} */
-
 .article {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 260px;
     background-color: #0ED7A8;
 }

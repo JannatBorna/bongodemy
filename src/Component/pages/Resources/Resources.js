@@ -6,21 +6,19 @@ import './Resources.css';
 const Resources = () => {
 return (
     <section id="resources">
-        <div className="contact_section">
             <Container>
                 <div>
                     <div className='article my-5'>
-                        <Link to=""><Button className='mt-4 link_section'><span>Article</span></Button></Link>
+                    <Link to="" className='mt-4 link_section'><span className='button_section'>Article</span></Link>
                     </div>
 
                     <div className='article'>
-                        <Link to="" className='mt-5 link_section'><span className='button_section mt-5'>E-Book</span></Link>
+                        <Link to="" className='mt-5 link_section'><span className='button_section'>E-Book</span></Link>
                     </div>
                 </div>
 
 
             </Container>
-        </div>
     </section>
         
     );
