@@ -4,18 +4,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Navigation from './Component/Navigation';
-import Home from './Component/Home';
-import CyberBulling from './Component/CyberBulling';
-import CyberCrime from './Component/CyberCrime';
-import Services from './Component/Services';
-import Training from './Component/Training';
-import Resources from './Component/Resources';
-import Contact from './Component/Contact';
-import Aboutus from './Component/Aboutus';
-import Login from './Component/Login';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Component/Footer';
+import Navigation from './Component/Shared/Header/Navigation';
+import Footer from './Component/Shared/Footer/Footer';
+import Home from './Component/pages/Home/Home';
+import CyberBulling from './Component/pages/CyberBulling/CyberBulling';
+import CyberCrime from './Component/pages/CyberCrime/CyberCrime';
+import Services from './Component/pages/Services/Services';
+import Training from './Component/pages/Training/Training';
+import Resources from './Component/pages/Resources/Resources';
+import AboutUs from './Component/pages/AboutUs/AboutUs';
+import Login from './Component/pages/Contact/Login';
+import Contact from './Component/pages/Contact/Contact';
+
 
 function App() {
   return (
@@ -26,10 +26,10 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/cyberbulling">
+          <Route path="/cyberBulling">
             <CyberBulling />
           </Route>
-          <Route path="/cybercrime">
+          <Route path="/cyberCrime">
             <CyberCrime />
           </Route>
           <Route path="/services">
@@ -45,7 +45,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/about">
-            <Aboutus />
+            <AboutUs />
           </Route>
           <Route path="/login">
             <Login />
