@@ -1,10 +1,19 @@
 import React from 'react';
+import Cards from '../../subComp/Cards';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+            <div className="container">
+                <div className="row mt-5">
+                    <Cards text="Cyberbullying" follow ="#"></Cards>
+                    <Cards text="Cyber crime" follow ="#"></Cards>
+
+                </div>
+                <div class="row mt-5">
+                    <Cards text="Cyber Security Solution" follow ="#"></Cards>
+                    <Cards text="Cyber Security Training" follow ="#"></Cards>
+                </div>
+            </div>
     );
 };
 
