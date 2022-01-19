@@ -3,7 +3,6 @@
 }
 
 .article {
-    /* border: 1px solid black; */
     height: 260px;
     background-color: #0ED7A8;
 }
@@ -15,7 +14,6 @@
     font-size: 20px;
     background-color: #0ED7A8 !important;
     border: #0ED7A8;
-
 }
 
 .button_section {
