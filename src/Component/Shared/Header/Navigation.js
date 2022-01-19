@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigaition.css'
-import image from '../img/BongoDemy-Logo-Transparent.png'
+import image from '../../../img/BongoDemy-Logo-Transparent.png'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import {
 
@@ -21,7 +21,7 @@ const Navigation = () => {
                     >
 
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/home'>
-                          <em>Home</em>
+                            <em>Home</em>
                         </Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/cyberbulling'> <em>Cyberbulling</em> </Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/cybercrime'><em>Cybercrime</em></Link>
@@ -36,11 +36,19 @@ const Navigation = () => {
 
                     <Navbar.Collapse className="d-flex justify-content-center ">
                         <Navbar.Text >
+<<<<<<< HEAD
                            <div>
                            <button className='btn btn-outline-success'>
                                 <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
                            </div>
+=======
+                            <div>
+                                <button className='btn btn-outline-success'>
+                                    <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
+                                </button>
+                            </div>
+>>>>>>> 04b84889da3dcd71af9c83000c0a9330b947e4bb
 
 
 
