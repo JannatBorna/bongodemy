@@ -24,7 +24,9 @@
     background-color: #1E2D40;
     color: aliceblue;
 }
-
+.banner{
+    display: flex;
+}
 #btn-col{
     color: rgb(248, 238, 238);
     background-color: #1E2D40;

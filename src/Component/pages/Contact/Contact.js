@@ -62,12 +62,8 @@ const Contact = () => {
                 <div className='col-md-5'>
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
-                            <Card.Title>
-                                <h4>
-                                    Location,Number & Mail Address
-                                </h4>
-
-
+                            <Card.Title className='banner'>
+                                <h4>  Location,Number & Mail Address </h4>
                             </Card.Title>
                             <Card.Text>
                                 <h6>
