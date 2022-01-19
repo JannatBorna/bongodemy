@@ -16,12 +16,10 @@ return (
                         <Link to="" className='link_section '><button className='button_section mt-4'>E-Book</button></Link>
                     </div>
                 </div>
-
-
-            </Container>
+        </Container>
     </section>
         
     );
 };
 
-export default Resources;
+export default Resources;            
