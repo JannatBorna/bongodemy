@@ -3,9 +3,9 @@
 }
 
 .article {
-    /* border: 1px solid black; */
     height: 260px;
     background-color: #0ED7A8;
+    border-radius: 5px;
 }
 
 .link_section {
@@ -14,10 +14,11 @@
     font-weight: 500;
     font-size: 20px;
     background-color: #0ED7A8 !important;
-    border: #0ED7A8;
-
+    margin-bottom: -50px;
 }
 
 .button_section {
-    margin-top: 150px;
+    background-color: #0ED7A8 !important;
+    border: #0ED7A8;
+    color: rgb(24, 24, 26) !important;
 }
