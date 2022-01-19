@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
 import './Contact1.css'
+
 const Contact = () => {
     const handleClickfb = () => {
         window.open("https://www.facebook.com/bongodemy");
@@ -63,9 +64,8 @@ const Contact = () => {
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
                             <Card.Title>
-                                <h4>
-                                    Location,Number & Mail Address
-                                </h4>
+                              
+                                <h3 className='fs-4'>Location,Number & Mail Address</h3>
 
 
                             </Card.Title>
