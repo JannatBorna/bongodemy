@@ -64,9 +64,8 @@ const Contact = () => {
                         <Card.Body>
                             <Card.Title>
                                 <h4>
-                                    Location,Number & Mail Address
+                                    Location,Number & Mail Address fb
                                 </h4>
-
 
                             </Card.Title>
                             <Card.Text>
