@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
 import './Contact1.css'
-
 const Contact = () => {
     const handleClickfb = () => {
         window.open("https://www.facebook.com/bongodemy");
@@ -63,11 +62,9 @@ const Contact = () => {
                 <div className='col-md-5'>
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
+                            
                             <Card.Title>
-                              
-                                <h3 className='fs-4'>Location,Number & Mail Address</h3>
-
-
+                                <h3 className='fs-4'> Location,Number & Mail Address</h3>
                             </Card.Title>
                             <Card.Text>
                                 <h6>
@@ -83,8 +80,8 @@ const Contact = () => {
 
                                 </h6>
 
-
                                 <div className='mapouter'><div className='gmap_canvas'><iframe width="463" height="102" id="gmap_canvas" src="https://maps.google.com/maps?q=East%20Barandi%20Para,jessore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><a href="https://www.embedgooglemap.net">responsive google map</a></div></div>
+
                             </Card.Text>
                             <Card.Text>
                                 <h5>
