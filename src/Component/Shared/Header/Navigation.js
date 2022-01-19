@@ -36,19 +36,11 @@ const Navigation = () => {
 
                     <Navbar.Collapse className="d-flex justify-content-center ">
                         <Navbar.Text >
-<<<<<<< HEAD
                            <div>
                            <button className='btn btn-outline-success'>
                                 <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
                            </div>
-=======
-                            <div>
-                                <button className='btn btn-outline-success'>
-                                    <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
-                                </button>
-                            </div>
->>>>>>> 04b84889da3dcd71af9c83000c0a9330b947e4bb
 
 
 
