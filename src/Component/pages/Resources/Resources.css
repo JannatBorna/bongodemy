@@ -22,3 +22,20 @@
     border: #0ED7A8;
     color: rgb(24, 24, 26) !important;
 }
+
+@media only screen and (max-width:688px) {
+    .article {
+        height: 240px;
+        width: 300px;
+
+
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .article {
+        height: 260px;
+
+
+    }
+}
