@@ -9,7 +9,7 @@ const CyberCrime = () => {
             <Cards text="Get a Consultation" follow="#"></Cards>
 
         </div>
-        <div class="row mt-5">
+        <div class="row my-5">
             <Cards text="Cyber-crime Resources" follow="#"></Cards>
             <Cards text="Emergency Helpline" follow="#"></Cards>
         </div>
