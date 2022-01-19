@@ -9,7 +9,7 @@ const Home = () => {
                     <Cards text="Cyber crime" follow ="#"></Cards>
 
                 </div>
-                <div class="row mt-5">
+                <div class="row my-5">
                     <Cards text="Cyber Security Solution" follow ="#"></Cards>
                     <Cards text="Cyber Security Training" follow ="#"></Cards>
                 </div>
