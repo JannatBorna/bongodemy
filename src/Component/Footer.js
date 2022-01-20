@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className='my-5 foterstyle text-white'>
+        <div className='my-5 foterstyle text-dark p-3'>
             <hr />
             <div className="row my-4">
                 <div className="col-md-2">
@@ -13,12 +13,15 @@ const Footer = () => {
                         </div>
                         <hr />
                         <a> Office Location  </a>
+                        <br />
                         <a> Phone Number  </a>
+                        <br />
                         <a>  Telephone Number </a>
-                        <a> Mail  </a>
+                        <br />
+                        <a> Mail     </a>
                     </div>
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-2 ">
                     <div className="justify-content-around align-items-center text-start ">
                         <div className=" text-start ">
                             <h3> Menu</h3>
@@ -42,7 +45,7 @@ const Footer = () => {
                 </div>
                 <div className="col-md-3">
                     <div className=" text-start ">
-                        <h3>Recent aost</h3>
+                        <h3>Recent Post</h3>
                     </div>
 
                     <hr />
@@ -65,9 +68,7 @@ const Footer = () => {
                         </div>
                     </form>
                 </div>
-                <div className=" mb-5 ">
-                    <p className='mb-3'>@ All Rights Reserved By BongoDemy 2021</p>
-                </div>
+
             </div>
 
         </div>

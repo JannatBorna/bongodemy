@@ -1,5 +1,9 @@
 .foterstyle{
-    background-color:#1E2D40;
-height: 50vh;
+    background-color:#04F3BB;
+/* height: 50vh; */
 
+}
+.logo{
+    height: 100%;
+    width: 200px;
 }
