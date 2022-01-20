@@ -12,6 +12,8 @@ import AboutUs from './Component/pages/AboutUs/AboutUs';
 import Footer from './Component/Shared/Footer/Footer';
 import Services from './Component/pages/Services/Services';
 import Training from './Component/pages/Training/Training';
+import NotFound from './Component/pages/NotFound/NotFound';
+
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
+
             <Route path="/about">
               <AboutUs />
             </Route>
@@ -48,11 +51,14 @@ function App() {
               <Login />
             </Route> */}
 
-
-
             <Route path="/">
               <Home />
             </Route>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+
           </Switch>
         </Router>
         <Footer></Footer>
