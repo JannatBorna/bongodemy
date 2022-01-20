@@ -1,10 +1,11 @@
 import React from 'react';
-import './Footer.css'
+import './Footer.css';
+
 const Footer = () => {
     return (
-        <div className='my-5 foterstyle text-dark p-3'>
+        <div className=' foterstyle '>
             <hr />
-            <div className="row my-4">
+            <div className="row ">
                 <div className="col-md-2">
                     <div className='justify-content-around align-items-center text-start ms-2'>
 
@@ -13,15 +14,12 @@ const Footer = () => {
                         </div>
                         <hr />
                         <a> Office Location  </a>
-                        <br />
                         <a> Phone Number  </a>
-                        <br />
                         <a>  Telephone Number </a>
-                        <br />
-                        <a> Mail     </a>
+                        <a> Mail  </a>
                     </div>
                 </div>
-                <div className="col-md-2 ">
+                <div className="col-md-2">
                     <div className="justify-content-around align-items-center text-start ">
                         <div className=" text-start ">
                             <h3> Menu</h3>
@@ -45,7 +43,7 @@ const Footer = () => {
                 </div>
                 <div className="col-md-3">
                     <div className=" text-start ">
-                        <h3>Recent Post</h3>
+                        <h3>Recent aost</h3>
                     </div>
 
                     <hr />
@@ -62,13 +60,15 @@ const Footer = () => {
                         <div class="mb-3 me-3">
                             <div className=" w-100 h-100 d-flex justify-content-around align-items-center">
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                <button className='ms-2 btn btn-outline-success text-black'>Subscribe</button>
+                                <button className='ms-2 btn subscribe '>Subscribe</button>
                             </div>
 
                         </div>
                     </form>
                 </div>
-
+                <div className=" mb-5 ">
+                    <p className='mb-3'>@ All Rights Reserved By BongoDemy 2021</p>
+                </div>
             </div>
 
         </div>
