@@ -2,7 +2,11 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
+<<<<<<< HEAD:src/Component/Footer.js
         <div className='my-5 foterstyle text-dark p-3'>
+=======
+        <div className='my-5 foterstyle text-black'>
+>>>>>>> 1101d72512486efadc937204e5fba3aaecf33002:src/Component/Shared/Footer/Footer.js
             <hr />
             <div className="row my-4">
                 <div className="col-md-2">
@@ -62,7 +66,7 @@ const Footer = () => {
                         <div class="mb-3 me-3">
                             <div className=" w-100 h-100 d-flex justify-content-around align-items-center">
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                <button className='ms-2 btn btn-outline-success text-white'>Subscribe</button>
+                                <button className='ms-2 btn btn-outline-success text-black'>Subscribe</button>
                             </div>
 
                         </div>
