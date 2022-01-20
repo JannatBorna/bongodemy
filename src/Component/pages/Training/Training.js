@@ -14,7 +14,7 @@ const Training = () => {
                 <div className="m-3 card  navbarstyle p-5 "> <h5 className="card-title">Student Overview </h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
                 <div className="m-3 card  navbarstyle p-5  "> <h5 className="card-title">Dicussion</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
+                    <p className="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
             </div>
         </div>
     );
