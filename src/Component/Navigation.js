@@ -9,7 +9,7 @@ import {
 const Navigation = () => {
     return (
 
-        <Navbar className='navbarstyle' expand="lg ">
+        <Navbar className='navbarstyle container' expand="lg ">
             <Container fluid>
                 <Navbar.Brand className=' text-white' href="#">
                     <img className='logo' src={image} alt="" />

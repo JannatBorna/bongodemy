@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigaition.css'
-import image from '../img/BongoDemy-Logo-Transparent.png'
+import image from '../../../img/BongoDemy-Logo-Transparent.png'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import {
 
