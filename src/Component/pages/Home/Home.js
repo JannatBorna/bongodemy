@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from '../../subComp/Cards';
+import './Home.css'
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
                     <Cards text="Cyber crime" follow ="#"></Cards>
 
                 </div>
-                <div class="row my-5">
+                <div className="row my-5">
                     <Cards text="Cyber Security Solution" follow ="#"></Cards>
                     <Cards text="Cyber Security Training" follow ="#"></Cards>
                 </div>
