@@ -18,7 +18,7 @@ const Contact = () => {
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
                             <Card.Title>
-                                <h4>
+                                <h4 className='title'>
                                     Contact Form
                                 </h4>
                             </Card.Title>
@@ -64,7 +64,7 @@ const Contact = () => {
                         <Card.Body>
                             
                             <Card.Title>
-                                <h3 className='fs-4'> Location,Number & Mail Address</h3>
+                                <h3 className='fs-4 title'> Location,Number & Mail Address</h3>
                             </Card.Title>
                             <Card.Text>
                                 <h6>
