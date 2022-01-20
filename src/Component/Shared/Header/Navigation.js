@@ -41,7 +41,6 @@ const Navigation = () => {
                                     <Link className='align-middle text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
                            </div>
-                          
                         </Navbar.Text>
 
                     </Navbar.Collapse>
