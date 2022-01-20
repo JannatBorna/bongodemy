@@ -9,7 +9,7 @@ import {
 const Navigation = () => {
     return (
 
-        <Navbar className='navbarstyle' expand="lg ">
+        <Navbar className='navbarStyle' expand="lg ">
             <Container fluid>
                 <Navbar.Brand className=' text-white' href="#">
                     <img className='logo' src={image} alt="" />
@@ -37,8 +37,8 @@ const Navigation = () => {
                     <Navbar.Collapse className="d-flex justify-content-center ">
                         <Navbar.Text >
                            <div>
-                           <button className='btn btn-outline-success'>
-                                <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
+                           <button className='navbar_button'>
+                                    <Link className='align-middle text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
                            </div>
                         </Navbar.Text>

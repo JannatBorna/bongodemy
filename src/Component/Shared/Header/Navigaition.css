@@ -1,18 +1,33 @@
-.navbarstyle{
-    background-color:#1e2d40;
-
-    /* color: #0ED7A8; */
+.navbarStyle {
+    background-color: #1e2d40;
 }
 
 
-em:hover{
-    background-color:#58BB66;
+em:hover {
+    background-color: #0ED7A8;
     padding: 10px;
     height: 20px;
     border-radius: 2px;
-    /* color:#58BB66 ; */
+    color: #0c0c0c;
+    font-weight: 600;
 }
-.logo{
+
+.logo {
     height: 100%;
     width: 200px;
+}
+
+.navbar_button {
+    color: black !important;
+    background-color: #0ED7A8 !important;
+    width: 120%;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.navbar_button:hover {
+    background-color: #1e2d40 !important;
+    border-color: 1px solid white;
+
 }
