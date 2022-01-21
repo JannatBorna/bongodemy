@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './../../subComp/Cards';
 
+
 const Home = () => {
     return (
         <div className="container">
