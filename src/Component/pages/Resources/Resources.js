@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Resources.css';
+import './Resources.css'
 
 
 const Resources = () => {
