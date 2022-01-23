@@ -1,0 +1,17 @@
+.navbarstyle{
+
+  color:#1E2D40;
+    background-color: #0ED7A8;
+}
+.navstyle{  
+     color:#1E2D40 ;
+
+   
+}
+.navstyle:hover{
+    padding-bottom: 5px;
+  color: #0ED7A8;
+    background-color:#1E2D40 ;
+    /* color: #0ED7A8; */
+  border-radius:2px ;
+}
