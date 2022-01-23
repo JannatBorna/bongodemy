@@ -23,7 +23,7 @@ const Contact = () => {
                                 </h4>
                             </Card.Title>
                             <Card.Text>
-                                <h6>Contact us if you need any kind of help about cyber security or harassment.You can directly contact us or describe your problem in this form. We will contact you as soon as possible.</h6>
+                                <h6>Contact with  us if you need any kind of help about cyber security or harassment.You can directly contact us or describe your problem in this form. We will contact you as soon as possible.</h6>
                             </Card.Text>
                             <Form >
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
