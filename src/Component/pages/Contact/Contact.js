@@ -54,10 +54,7 @@ const Contact = () => {
                     <Card className='card-col'>
                         <Card.Body>
                             <Card.Title>
-                                <h4>
-                                   Location,Number & Mail Address
-                                </h4>
-                                
+                            <h3 className='fs-4 title'> Location,Number & Mail Address</h3> 
     
                             </Card.Title>
                             <Card.Text>
