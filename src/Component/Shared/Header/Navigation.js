@@ -23,12 +23,16 @@ const Navigation = () => {
                             <Link className='text-black ms-4 text-decoration-none' to='/services'>Services</Link>
                             {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
-                        <NavDropdown title="Training" className='text-black ms-4 text-decoration-none' id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
-                            <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
-                            <NavDropdown.Item href="/hackingLab">Hacking Lab</NavDropdown.Item>
-                            <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
-                        </NavDropdown>
+                       
+                            <NavDropdown title="Training" className='text-black ms-4 text-decoration-none' id="basic-nav-dropdown">
+                            <div className='dropdown_item'>
+                                <NavDropdown.Item href="/freeTraining" className='text-white dropdown_text'>Free Training</NavDropdown.Item>
+                                <NavDropdown.Item href="/courses" className='text-white dropdown_text'>Courses</NavDropdown.Item>
+                                <NavDropdown.Item href="/hackingLab" className='text-white dropdown_text'>Hacking Lab</NavDropdown.Item>
+                                <NavDropdown.Item href="/battleGround" className='text-white dropdown_text'>Battle Ground</NavDropdown.Item> 
+                            </div>
+                            </NavDropdown>
+                       
 
                             <Link className='text-black ms-4 text-decoration-none' to='/resources'>Resources</Link>
                             <Link className='text-black ms-4 text-decoration-none' to='/contact'>Contact</Link>
