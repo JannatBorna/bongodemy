@@ -1,9 +1,9 @@
 import React from 'react';
-import './Navigaition.css'
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import './Navigation.css'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import {
 
-    Link, NavLink
+    Link
 } from "react-router-dom";
 const Navigation = () => {
     return (
@@ -18,10 +18,18 @@ const Navigation = () => {
 
                     >
                             <Link className='text-black ms-4 text-decoration-none' to='/home'>Home</Link>
-                            <Link className='text-black ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
-                            <Link className='text-black ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link>
+                            {/* <Link className='text-black ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
+                            <Link className='text-black ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link> */}
                             <Link className='text-black ms-4 text-decoration-none' to='/services'>Services</Link>
-                            <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link>
+                            {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
+
+                        <NavDropdown title="Training" className='text-black ms-4 text-decoration-none' id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
+                            <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
+                            <NavDropdown.Item href="/hackingLab">Hacking Lab</NavDropdown.Item>
+                            <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
+                        </NavDropdown>
+
                             <Link className='text-black ms-4 text-decoration-none' to='/resources'>Resources</Link>
                             <Link className='text-black ms-4 text-decoration-none' to='/contact'>Contact</Link>
                             <Link className='text-black ms-4 text-decoration-none' to='/about'>About Us</Link>
