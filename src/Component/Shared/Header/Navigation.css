@@ -1,10 +1,10 @@
 .navbarstyle {
-  color: #1E2D40 !important;
-  background-color: #0ED7A8 !important;
+  /* color: #eff2f7 !important; */
+  background-color: #1E2D40 !important;
 }
 
 .navstyle {
-  color: #1E2D40 !important;
+  color: #f7f7f7 !important;
 }
 
 .navstyle:hover {
@@ -14,8 +14,12 @@
   border-radius: 2px;
 }
 
-.dropdown_color {
+/* .dropdown_color {
   color: black !important;
+} */
+
+#dropdown-basic {
+  background-color: #1E2D40 !important;
 }
 
 
