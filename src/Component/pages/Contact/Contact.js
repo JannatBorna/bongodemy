@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
-import './Contact1.css'
+import './Contact.css'
 const Contact = () => {
     const handleClickfb = () => {
         window.open("https://www.facebook.com/bongodemy");
