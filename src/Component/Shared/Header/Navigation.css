@@ -1,17 +1,25 @@
-.navbarstyle{
-
-  color:#1E2D40;
-    background-color: #0ED7A8;
+.navbarstyle {
+  color: #1E2D40 !important;
+  background-color: #0ED7A8 !important;
 }
-.navstyle{  
-     color:#1E2D40 ;
 
-   
+.navstyle {
+  color: #1E2D40 !important;
 }
-.navstyle:hover{
-    padding-bottom: 5px;
-  color: #0ED7A8;
-    background-color:#1E2D40 ;
-    /* color: #0ED7A8; */
-  border-radius:2px ;
+
+.navstyle:hover {
+  padding-bottom: 5px;
+  color: #0ED7A8 !important;
+  background-color: #1E2D40 !important;
+  border-radius: 2px;
+}
+
+.dropdown_item {
+  background-color: #1E2D40 !important;
+  color: rgb(8, 8, 8) !important;
+}
+
+.dropdown_text:hover {
+  background-color: #0ED7A8 !important;
+  color: black !important;
 }

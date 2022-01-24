@@ -5,6 +5,7 @@
 .article {
     height: 260px;
     background-color: #0ED7A8;
+    border-radius: 7px;
 }
 
 .link_section {
