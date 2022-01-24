@@ -23,8 +23,8 @@ const Navigation = () => {
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/home'>
                           <em>Home</em>
                         </Link>
-                        {/* <Link className='text-white ms-4 text-decoration-none navhover' to='/cyberbulling'> <em>Cyberbulling</em> </Link>
-                        <Link className='text-white ms-4 text-decoration-none navhover' to='/cybercrime'><em>Cybercrime</em></Link>*/} 
+                        <Link className='text-white ms-4 text-decoration-none navhover' to='/cyberbulling'> <em>Cyberbulling</em> </Link>
+                        <Link className='text-white ms-4 text-decoration-none navhover' to='/cybercrime'><em>Cybercrime</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/services'><em>Services</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/training'><em>Training</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/resources'><em>Resources</em></Link>
