@@ -3,7 +3,6 @@
 }
 
 .article {
-    /* border: 1px solid black; */
     height: 260px;
     background-color: #0ED7A8;
 }
@@ -16,8 +15,4 @@
     background-color: #0ED7A8 !important;
     border: #0ED7A8;
 
-}
-
-.button_section {
-    margin-top: 150px;
 }

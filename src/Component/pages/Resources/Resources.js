@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import './Resources.css';
 
 const Resources = () => {
@@ -9,11 +8,11 @@ return (
             <Container>
                 <div>
                     <div className='article my-5'>
-                    <Link to="" className='mt-4 link_section'><span className='button_section'>Article</span></Link>
+                    <button to="" className='mt-4 link_section'>Article</button>
                     </div>
 
                     <div className='article'>
-                        <Link to="" className='mt-5 link_section'><span className='button_section'>E-Book</span></Link>
+                        <button to="" className='mt-4 link_section'>E-Book</button>
                     </div>
                 </div>
 
