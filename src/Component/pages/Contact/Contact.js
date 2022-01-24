@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
-import './Contact.css'
+import './Contact1.css'
 const Contact = () => {
     return (
         <div className='bg-col'>
