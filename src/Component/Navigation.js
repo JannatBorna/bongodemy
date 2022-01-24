@@ -26,7 +26,16 @@ const Navigation = () => {
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/cyberbulling'> <em>Cyberbulling</em> </Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/cybercrime'><em>Cybercrime</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/services'><em>Services</em></Link>
-                        <Link className='text-white ms-4 text-decoration-none navhover' to='/training'><em>Training</em></Link>
+                        {/* <Link className='text-white ms-4 text-decoration-none navhover' to='/training'><em>Training</em></Link> */}
+                         
+                        <NavDropdown title="Training" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        </NavDropdown>
+
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/resources'><em>Resources</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/contact'><em>Contact</em></Link>
                         <Link className='text-white ms-4 text-decoration-none navhover' to='/about'><em>AboutUs</em></Link>
