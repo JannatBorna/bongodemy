@@ -3,7 +3,6 @@ import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Resources.css';
 
-
 const Resources = () => {
 return (
     <section id="resources">
