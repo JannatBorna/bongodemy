@@ -24,7 +24,7 @@ const Navigation = () => {
                             {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
                        
-                            <NavDropdown title="Training" className='text-black ms-4 text-decoration-none' id="basic-nav-dropdown">
+                        <NavDropdown title="Training" className='dropdown_color ms-4 text-decoration-none' id="basic-nav-dropdown">
                             <div className='dropdown_item'>
                                 <NavDropdown.Item href="/freeTraining" className='text-white dropdown_text'>Free Training</NavDropdown.Item>
                                 <NavDropdown.Item href="/courses" className='text-white dropdown_text'>Courses</NavDropdown.Item>
@@ -41,51 +41,20 @@ const Navigation = () => {
                      
                     </Nav>
 
-                    <Navbar.Collapse className="d-flex justify-content-center ">
+                    <Navbar.Collapse className="d-flex justify-content-end ">
                         <Navbar.Text >
 
-
-                         <button className='btn btn-outline-success'>
-                         <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
-                         </button>
-
-
-
-                        </Navbar.Text>
+                            <Nav.Link to="/login" className="text-end">
+                                <button className='signUp_button'>Signup/Login</button>
+                            </Nav.Link> 
+                            
+                    </Navbar.Text>
                     
                     </Navbar.Collapse>
 
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-
-
-
-        // <div>
-        //     <Navbar bg="light" className='navbarstyle' expand="lg">
-        //         <Container>
-        //             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        //             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        //             <Navbar.Collapse id="basic-navbar-nav">
-        //                 <Nav className="d-flex justify-content-center align-items-center">
-        //                     <div className=" d-flex justify-content-center align-items-center">
-        //                     <Link className='text-black ms-1' to='/home'>Home</Link>
-        //                     <Link className='text-black ms-1' to='/cyberbulling'>Cyber-bulling</Link>
-        //                     <Link className='text-black ms-1' to='/cybercrime'>Cyber-Crime</Link>
-        //                     <Link className='text-black ms-1' to='/services'>Services</Link>
-        //                     <Link className='text-black ms-1' to='/training'>Training</Link>
-        //                     <Link className='text-black ms-1' to='/resources'>Resources</Link>
-        //                     <Link className='text-black ms-1' to='/contact'>Contact</Link>
-        //                     <Link className='text-black ms-1' to='/about'>About Us</Link>
-        //                     <Link className='text-black ms-1' to='/login'>Signup/Login</Link>
-        //                     </div>
-
-
-        //                 </Nav>
-        //             </Navbar.Collapse>
-        //         </Container>
-        //     </Navbar>
-        // </div>
     );
 };
 

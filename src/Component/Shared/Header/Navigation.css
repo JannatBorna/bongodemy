@@ -14,6 +14,11 @@
   border-radius: 2px;
 }
 
+.dropdown_color {
+  color: black !important;
+}
+
+
 .dropdown_item {
   background-color: #1E2D40 !important;
   color: rgb(8, 8, 8) !important;
@@ -22,4 +27,17 @@
 .dropdown_text:hover {
   background-color: #0ED7A8 !important;
   color: black !important;
+}
+
+.signUp_button {
+  width: 120px;
+  height: 40px;
+  background-color: #1E2D40 !important;
+  color: white;
+  border-radius: 7px;
+}
+
+.signUp_button:hover {
+  background-color: #0ED7A8 !important;
+  color: rgb(0, 0, 0) !important;
 }
