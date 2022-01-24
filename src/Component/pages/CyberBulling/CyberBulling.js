@@ -5,7 +5,7 @@ const CyberBulling = () => {
     return (
         <div className="container">
             <div className="row mt-5">
-                <Cards text="Complain Cyberbullying" follow="/cyberBulling"></Cards>
+                <Cards text="Complain Cyberbullying" follow="#"></Cards>
                 <Cards text="Get a Consultation" follow="#"></Cards>
 
             </div>
