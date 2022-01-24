@@ -5,37 +5,42 @@
 .row{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
    
 }
 
 .card-col{
-   
+    margin-top: 40px;
     margin-bottom: 20px;
-    background-color:#0ED7A8 ;
-    color:#1E2D40;
     text-align: justify;
     
 }
-
-.form-bg{
-    color: #35475f;
-   
+#cardcolor{
+    background-color:#0ED7A8 ;
+    color:#1E2D40;
 }
-.form-col{
+
+#form-col{
    
     background-color: #1E2D40;
+    color: aliceblue;
 }
-
-.btn-col{
+.banner{
+    display: flex;
+}
+.title{
+    font-weight: 700;
+}
+#btn-col{
     color: rgb(248, 238, 238);
     background-color: #1E2D40;
 }
-textarea{
+.text-area-size{
+    height: 95px;
     resize: none;
-
 }
-
+#icons-pad{
+    margin:5px;
+}
 /*map css*/
 .mapouter{position:relative;text-align:right;height:118px;width:300px;
 }
