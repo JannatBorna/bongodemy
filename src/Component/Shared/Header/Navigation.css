@@ -1,5 +1,4 @@
 .navbarstyle {
-  /* color: #eff2f7 !important; */
   background-color: #1E2D40 !important;
 }
 
@@ -36,12 +35,12 @@
 .signUp_button {
   width: 120px;
   height: 40px;
-  background-color: #1E2D40 !important;
-  color: white;
+  background-color: #0ED7A8 !important;
+  color: black;
   border-radius: 7px;
 }
 
 .signUp_button:hover {
-  background-color: #0ED7A8 !important;
-  color: rgb(0, 0, 0) !important;
+  background-color: #1E2D40 !important;
+  color: white !important;
 }
