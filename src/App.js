@@ -15,6 +15,7 @@ import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
 import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
+import HackingLab from './Component/Shared/Header/HackingLab';
 
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/hackingLab">
+            <HackingLab />
           </Route>
 
 
