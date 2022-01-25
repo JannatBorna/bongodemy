@@ -48,13 +48,12 @@ function App() {
           <Route path="/about">
             <AboutUs />
           </Route>
-          <Route path="/complainform">
-            <ComplainForm />
-          </Route>
           {/* <Route path="/login">
             <Login />
           </Route> */}
-
+          <Route path="/complainform">
+            <ComplainForm />
+          </Route>
 
 
           <Route path="/">
@@ -63,6 +62,7 @@ function App() {
         </Switch>
       </Router>
       <Footer></Footer>
+
     </div>
   );
 }
