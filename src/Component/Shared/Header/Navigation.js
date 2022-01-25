@@ -28,6 +28,7 @@ const Navigation = () => {
                             <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
                             <NavDropdown.Item href="/hackingLab">Hacking Lab</NavDropdown.Item>
                             <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
+                            <NavDropdown.Item href="/complainform">Complain Form</NavDropdown.Item>
                         </NavDropdown>
 
                             <Link className='text-black ms-4 text-decoration-none' to='/resources'>Resources</Link>

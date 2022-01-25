@@ -1,0 +1,10 @@
+.complain-button{
+    padding:8px 200px;
+    margin:30px 0px;
+    background-color: #0ED7A8;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
