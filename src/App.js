@@ -13,8 +13,9 @@ import Services from './Component/pages/Services/Services';
 import Training from './Component/pages/Training/Training';
 import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
-import Login from './Component/pages/Contact/Login';
+// import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
+import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
 
 
 function App() {
@@ -47,9 +48,12 @@ function App() {
           <Route path="/about">
             <AboutUs />
           </Route>
-          <Route path="/login">
-            <Login />
+          <Route path="/complainform">
+            <ComplainForm />
           </Route>
+          {/* <Route path="/login">
+            <Login />
+          </Route> */}
 
 
 
