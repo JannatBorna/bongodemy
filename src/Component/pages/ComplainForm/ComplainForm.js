@@ -12,7 +12,7 @@ const ComplainForm=()=>{
 
     return(
         <>
-        <div style={{color:'white'}} className='container mt-5'>
+        <div style={{color:'white'}} className='container mt-5 complainForm'>
         <h1 >অভিযোগ ফরম</h1>
         <p>জরুরী প্রয়োজনেঃ ০১৬১১ ৮৬০ ৯৯৯ নাম্বারে ফোন দিন ।</p>
         <ProgressBar completed={33} bgColor='#0ED7A8' className='my-3'/>
