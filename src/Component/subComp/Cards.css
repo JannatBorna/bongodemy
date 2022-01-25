@@ -1,11 +1,14 @@
 .boxoo {
-  background-color: #0ed7a8;
-  height: 230px;
+  background-color: #0ed7a8!important;
+  height: 230px!important;
   max-width: 300px !important;
-  border-radius: 25px;
-  box-shadow: 44px 44px 49px #172231, -44px -44px 49px #25384f79;
+  border-radius: 25px!important;
+  box-shadow: 44px 44px 49px #172231, -44px -44px 49px #25384f79!important;
+  text-decoration: none !important;
 }
 
 h4{
-    max-width: 180px ;
+    max-width: 180px !important;
+    color: #172231!important;
+    
 }
