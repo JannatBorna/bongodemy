@@ -1,0 +1,19 @@
+#resources {
+    background: #1E2D40 !important;
+}
+
+.article {
+    height: 260px;
+    background-color: #0ED7A8;
+    border-radius: 7px;
+}
+
+.link_section {
+    text-decoration: none;
+    color: rgb(32, 32, 34) !important;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #0ED7A8 !important;
+    border: #0ED7A8;
+
+}
