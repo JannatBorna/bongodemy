@@ -13,8 +13,8 @@ const Navigation = () => {
                     <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
 
                             <Link className='text-white ms-4 text-decoration-none' to='/home'>Home</Link>
-                            <Link className='text-white ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
-                            <Link className='text-white ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link>
+                            {/* <Link className='text-white ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
+                            <Link className='text-white ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link> */}
                             <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
                             {/* <Link className='text-white ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
