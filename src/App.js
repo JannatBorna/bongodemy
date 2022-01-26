@@ -99,14 +99,14 @@ function App() {
               value: 20,
             },
             opacity: {
-              value: 0.5,
+              value: 0.1,
             },
             shape: {
               type: "circle",
             },
             size: {
               random: true,
-              value: 2,
+              value: 3,
             },
           },
           detectRetina: true,
@@ -164,5 +164,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
