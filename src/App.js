@@ -16,6 +16,8 @@ import AboutUs from './Component/pages/AboutUs/AboutUs';
 // import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
 import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
+import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
+import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
 
 import Particles from "react-tsparticles";
 
@@ -143,6 +145,12 @@ function App() {
           </Route> */}
           <Route path="/complainform">
             <ComplainForm />
+          </Route>
+          <Route path="/complainformsec">
+           <ComplainFormSec/>
+          </Route>
+          <Route path="/complainformthird">
+           <ComplainFormThird/>
           </Route>
 
 

@@ -1,25 +1,15 @@
 import React from 'react';
+<<<<<<< HEAD
 import './Service.css'
 
+=======
+import './Services.css'
+>>>>>>> 12879856eff77e9e79d1501236ef00b5753835c0
 const Services = () => {
     return (
         <div>
-            <h1>Services</h1>
-            <div className='subscribe '>
-                <div className="d-flex flex-column  container ">
-                    <div className="card   navbarstyle  m-3 p-5 ">
-
-                        <div className="card-body">
-                            <h5 className="card-title">SERVICES Plan & Pricing </h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="m-3 card  navbarstyle p-5 "> <h5 className="card-title">Portfoliyo</h5>
-                        <p className="card-text"> quick example text to build on the card title and make up the bulk of the card's content.</p></div>
-                    <div className="m-3 card  navbarstyle p-5  "> <h5 className="card-title">Client Review</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
-                </div>
-            </div></div>
+            <h1 className='m-2'>Services</h1>
+        </div>
     );
 };
 
