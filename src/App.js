@@ -111,8 +111,8 @@ function App() {
           },
           detectRetina: true,
         }}
-
-      />
+/>
+      
       <Router>
         <Navigation></Navigation>
         <Switch>

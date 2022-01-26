@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
     return (
 
-        <Navbar className='navbarstyle container'  expand="lg ">
+        <Navbar className='navbarstyle'  expand="lg ">
             <Container fluid>
                 <Navbar.Brand className='text-white' href="#">BongoDemy</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -13,20 +13,9 @@ const Navigation = () => {
                     <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
 
                             <Link className='text-white ms-4 text-decoration-none' to='/home'>Home</Link>
-                            {/* <Link className='text-white ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
-                            <Link className='text-white ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link> */}
+             
                             <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
-                            {/* <Link className='text-white ms-4 text-decoration-none' to='/training'>Training</Link> */}
-
-
-                        {/* <NavDropdown title="Training" className='dropdown_color text-white ms-4 text-decoration-none' id="basic-nav-dropdown">
-                            <div className='dropdown_item'>
-                                <NavDropdown.Item href="/freeTraining" className='text-white dropdown_text'>Free Training</NavDropdown.Item>
-                                <NavDropdown.Item href="/courses" className='text-white dropdown_text'>Courses</NavDropdown.Item>
-                                <NavDropdown.Item href="/hackingLab" className='text-white dropdown_text'>Hacking Lab</NavDropdown.Item>
-                                <NavDropdown.Item href="/battleGround" className='text-white dropdown_text'>Battle Ground</NavDropdown.Item> 
-                            </div>
-                            </NavDropdown> */}
+           
 
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" className='mx-4'>
