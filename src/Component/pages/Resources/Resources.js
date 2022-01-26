@@ -11,11 +11,11 @@ return (
           
                 <div>
                     <div className='article my-5'>
-                    <button to="" className='mt-4 link_section'>Article</button>
+                    <button to="" className='mt-4 resources_text'>Article</button>
                     </div>
 
                     <div className='article'>
-                        <button to="" className='mt-4 link_section'>E-Book</button>
+                    <button to="" className='mt-4 resources_text'>E-Book</button>
                     </div>
                 </div>
 
