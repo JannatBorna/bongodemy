@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
     return (
 
-        <Navbar className='navbarstyle'  expand="lg ">
+        <Navbar className='navbarstyle container'  expand="lg ">
             <Container fluid>
                 <Navbar.Brand className='text-white' href="#">BongoDemy</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
