@@ -30,7 +30,11 @@ const ComplainForm=()=>{
         আপনার মোবাইল নাম্বার খোলা রাখবেন । প্রয়োজনে আপনার সাথে যোগাযোগ করা হবে<br/>
         অভিযোগ করার পূর্বে প্রয়োজনে 01611860999 এই নাম্বারে ফোন দিয়ে কথা বলে নিতে পারেন।</p>
 
-        <Link className='complain-button' to='/complainform'>পরবর্তী ধাপ {rightarrow} </Link>
+        <Link  to='/complainformsec'>
+            <button className='complain-button'>
+            পরবর্তী ধাপ {rightarrow}
+            </button>
+            </Link>
 
         </div>
        

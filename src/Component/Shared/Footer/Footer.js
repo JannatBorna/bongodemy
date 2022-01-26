@@ -2,9 +2,9 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className='my-5 foterstyle text-black'>
+        <div className='my-5 foterstyle text-black '>
             <hr />
-            <div className="row my-4">
+            <div className="row my-4 container">
                 <div className="col-md-2">
                     <div className='justify-content-around align-items-center text-start ms-2'>
 
@@ -51,7 +51,7 @@ const Footer = () => {
                     <p>Recent Posrt 2</p>
                 </div>
                 <div className="col-md-5">
-                    <div className=" text-start ">
+                    <div className=" text-start">
                         <h3 className=''>News Letter</h3>
                     </div>
                     <hr />
