@@ -14,6 +14,7 @@ const Navigation = () => {
                 <Navbar.Brand className='' href="#">BongoDemy</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
+<<<<<<< HEAD
                     <Nav
                         className=" text-decoration-none d-flex justify-content-around align-items-center "
 
@@ -21,6 +22,15 @@ const Navigation = () => {
                         <Link className=' navstyle  ms-4 text-decoration-none' to='/home'>Home</Link>
 
                         <Link className='navstyle  ms-4 text-decoration-none' to='/services'>Services</Link>
+=======
+                    <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
+
+                            <Link className='text-white ms-4 text-decoration-none' to='/home'>Home</Link>
+             
+                            <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
+           
+
+>>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" className='mx-4'>
                                 Training
@@ -31,6 +41,8 @@ const Navigation = () => {
                                 <Dropdown.Item href="/courses" className='text-white dropdown_text'>Courses</Dropdown.Item>
                                 <Dropdown.Item href="/hackingLab" className='text-white dropdown_text'>Hacking Lab</Dropdown.Item>
                                 <Dropdown.Item href="/battleGround" className='text-white dropdown_text'>Battle Ground</Dropdown.Item>
+                                <Dropdown.Item href="/complainform" className='text-white dropdown_text'>Complain Form</Dropdown.Item>
+                                    
                             </Dropdown.Menu>
 
                         </Dropdown>

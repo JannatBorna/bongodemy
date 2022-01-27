@@ -3,9 +3,15 @@ import './Footer.css';
 
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <div className=' foterstyle '>
             <hr />
             <div className="row ">
+=======
+        <div className='my-5 foterstyle text-black '>
+            <hr />
+            <div className="row my-4 container">
+>>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
                 <div className="col-md-2">
                     <div className='justify-content-around align-items-center text-start ms-2'>
 
@@ -52,7 +58,7 @@ const Footer = () => {
                     <p>Recent Posrt 2</p>
                 </div>
                 <div className="col-md-5">
-                    <div className=" text-start ">
+                    <div className=" text-start">
                         <h3 className=''>News Letter</h3>
                     </div>
                     <hr />

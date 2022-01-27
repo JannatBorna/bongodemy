@@ -1,11 +1,12 @@
 import React from 'react';
 import Cards from '../../subComp/Cards';
 
+
 const CyberBulling = () => {
     return (
         <div className="container">
             <div className="row mt-5">
-                <Cards text="Complain Cyberbullying" follow="#"></Cards>
+                <Cards text="Report Cyberbullying" follow="complainform"></Cards>
                 <Cards text="Get a Consultation" follow="#"></Cards>
 
             </div>
