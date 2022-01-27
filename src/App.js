@@ -15,6 +15,7 @@ import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
 // import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
+import Courses from './Component/pages/Courses/Courses';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/courses">
+            <Courses />
           </Route>
           <Route path="/about">
             <AboutUs />
