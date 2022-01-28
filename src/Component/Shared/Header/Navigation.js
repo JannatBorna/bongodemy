@@ -1,15 +1,28 @@
 import React from 'react';
-import './Navigation.css'
+
 import { Navbar, Nav, Container, Dropdown } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import {
+
+    Link, NavLink
+} from "react-router-dom";
+import "./Navigation.css"
 const Navigation = () => {
     return (
 
-        <Navbar className='navbarstyle'  expand="lg ">
+        <Navbar className='navbarstyle' expand="lg ">
             <Container fluid>
-                <Navbar.Brand className='text-white' href="#">BongoDemy</Navbar.Brand>
+                <Navbar.Brand className='' href="#">BongoDemy</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
+<<<<<<< HEAD
+                    <Nav
+                        className=" text-decoration-none d-flex justify-content-around align-items-center "
+
+                    >
+                        <Link className=' navstyle  ms-4 text-decoration-none' to='/home'>Home</Link>
+
+                        <Link className='navstyle  ms-4 text-decoration-none' to='/services'>Services</Link>
+=======
                     <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
 
                             <Link className='text-white ms-4 text-decoration-none' to='/home'>Home</Link>
@@ -17,6 +30,7 @@ const Navigation = () => {
                             <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
            
 
+>>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" className='mx-4'>
                                 Training
@@ -30,30 +44,61 @@ const Navigation = () => {
                                 <Dropdown.Item href="/complainform" className='text-white dropdown_text'>Complain Form</Dropdown.Item>
                                     
                             </Dropdown.Menu>
-                           
-                        </Dropdown>
-                       
 
-                            <Link className='text-white text-decoration-none' to='/resources'>Resources</Link>
-                            <Link className='text-white ms-4 text-decoration-none' to='/contact'>Contact</Link>
-                            <Link className='text-white ms-4 text-decoration-none' to='/about'>About Us</Link>
-                       
-                     
+                        </Dropdown>
+                        <Link className='navstyle  ms-4 text-decoration-none' to='/resources'>Resources</Link>
+                        <Link className='navstyle  ms-4 text-decoration-none' to='/contact'>Contact</Link>
+                        <Link className='navstyle  ms-4 text-decoration-none' to='/about'>About Us</Link>
+
+
                     </Nav>
 
-                    <Navbar.Collapse className="d-flex justify-content-end ">
+                    <Navbar.Collapse className="d-flex justify-content-center ">
                         <Navbar.Text >
 
-                            <Nav.Link to="/login" className="text-end">
-                                <button className='signUp_button'>Signup/Login</button>
-                            </Nav.Link> 
-                            
-                    </Navbar.Text>
-                </Navbar.Collapse>    
-            </Navbar.Collapse>        
-        </Container>
-    </Navbar>            
- );
+
+                            <button className='btn btn-outline-success'>
+                                <Link className='text-white ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
+                            </button>
+
+
+
+                        </Navbar.Text>
+
+                    </Navbar.Collapse>
+
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
+
+
+        // <div>
+        //     <Navbar bg="light" className='navbarstyle' expand="lg">
+        //         <Container>
+        //             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        //             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        //             <Navbar.Collapse id="basic-navbar-nav">
+        //                 <Nav className="d-flex justify-content-center align-items-center">
+        //                     <div className=" d-flex justify-content-center align-items-center">
+        //                     <Link className='text-white ms-1' to='/home'>Home</Link>
+        //                     <Link className='text-white ms-1' to='/cyberbulling'>Cyber-bulling</Link>
+        //                     <Link className='text-white ms-1' to='/cybercrime'>Cyber-Crime</Link>
+        //                     <Link className='text-white ms-1' to='/services'>Services</Link>
+        //                     <Link className='text-white ms-1' to='/training'>Training</Link>
+        //                     <Link className='text-white ms-1' to='/resources'>Resources</Link>
+        //                     <Link className='text-white ms-1' to='/contact'>Contact</Link>
+        //                     <Link className='text-white ms-1' to='/about'>About Us</Link>
+        //                     <Link className='text-white ms-1' to='/login'>Signup/Login</Link>
+        //                     </div>
+
+
+        //                 </Nav>
+        //             </Navbar.Collapse>
+        //         </Container>
+        //     </Navbar>
+        // </div>
+    );
 };
 
 export default Navigation;

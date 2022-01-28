@@ -1,10 +1,17 @@
 import React from 'react';
-import './Footer.css'
+import './Footer.css';
+
 const Footer = () => {
     return (
+<<<<<<< HEAD
+        <div className=' foterstyle '>
+            <hr />
+            <div className="row ">
+=======
         <div className='my-5 foterstyle text-black '>
             <hr />
             <div className="row my-4 container">
+>>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
                 <div className="col-md-2">
                     <div className='justify-content-around align-items-center text-start ms-2'>
 
@@ -59,7 +66,7 @@ const Footer = () => {
                         <div class="mb-3 me-3">
                             <div className=" w-100 h-100 d-flex justify-content-around align-items-center">
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                <button className='ms-2 btn btn-outline-success text-black'>Subscribe</button>
+                                <button className='ms-2 btn subscribe '>Subscribe</button>
                             </div>
 
                         </div>
