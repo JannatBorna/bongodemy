@@ -99,14 +99,14 @@ function App() {
               value: 20,
             },
             opacity: {
-              value: 0.1,
+              value: 4,
             },
             shape: {
               type: "circle",
             },
             size: {
               random: true,
-              value: 2,
+              value: 1.5,
             },
           },
           detectRetina: true,
