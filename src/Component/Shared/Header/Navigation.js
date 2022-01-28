@@ -2,23 +2,25 @@ import React from 'react';
 import './Navigation.css'
 import { Navbar, Nav, Container, Dropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import logo from '../../../images/icon/BongoDemy-Logo-Transparent.png'
 const Navigation = () => {
     return (
 
         <Navbar className='navbarstyle' expand="lg ">
             <Container fluid>
-                <Navbar.Brand className='text-white' href="#">BongoDemy</Navbar.Brand>
+                <Navbar.Brand className='text-white' href="#">
+                    <img src={logo} alt="" className='header_logo'/>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
 
-                        <Link className='text-white ms-4 text-decoration-none' to='/home'>Home</Link>
+                        <Link className='navbar_text text-white ms-4 text-decoration-none' to='/home'>Home</Link>
 
-                        <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
-
+                        <Link className='navbar_text text-white ms-4 text-decoration-none' to='/services'>Services</Link>
 
                         <Dropdown>
-                            <Dropdown.Toggle id="dropdown-basic" className='mx-4'>
+                            <Dropdown.Toggle id="dropdown-basic" className='mx-4 navbar_text'>
                                 Training
                             </Dropdown.Toggle>
 
@@ -34,9 +36,9 @@ const Navigation = () => {
                         </Dropdown>
 
 
-                        <Link className='text-white text-decoration-none' to='/resources'>Resources</Link>
-                        <Link className='text-white ms-4 text-decoration-none' to='/contact'>Contact</Link>
-                        <Link className='text-white ms-4 text-decoration-none' to='/about'>About Us</Link>
+                        <Link className='navbar_text text-white text-decoration-none' to='/resources'>Resources</Link>
+                        <Link className='navbar_text text-white ms-4 text-decoration-none' to='/contact'>Contact</Link>
+                        <Link className='navbar_text text-white ms-4 text-decoration-none' to='/about'>About Us</Link>
 
 
                     </Nav>

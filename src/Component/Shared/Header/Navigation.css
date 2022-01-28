@@ -2,6 +2,31 @@
   background-color: #1E2D40 !important;
 }
 
+.header_logo {
+  width: 200px;
+  height: 40px;
+}
+
+.navbar_text {
+  font-family: cursive;
+  font-size: 18px;
+}
+
+.navbar_text:hover {
+  background-color: #0ED7A8 !important;
+  border-radius: 5px;
+  color: black !important;
+  padding: 10px;
+  font-weight: 500;
+  font-family: cursive;
+
+}
+
+#dropdown-basic:hover {
+  background-color: #0ED7A8 !important;
+  Color: black !important;
+}
+
 .navstyle {
   color: #f7f7f7 !important;
 }
@@ -25,6 +50,7 @@
 .dropdown_item {
   background-color: #1E2D40 !important;
   color: rgb(8, 8, 8) !important;
+  font-family: cursive;
 }
 
 .dropdown_text:hover {
@@ -38,9 +64,12 @@
   background-color: #0ED7A8 !important;
   color: black;
   border-radius: 7px;
+  font-family: cursive;
+  font-size: 18px;
 }
 
 .signUp_button:hover {
   background-color: #1E2D40 !important;
   color: white !important;
+  font-family: cursive;
 }
