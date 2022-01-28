@@ -9,21 +9,6 @@ import lottieJson5 from '../../../images/animation/web5.json';
 
 const Services = () => {
     return (
-<<<<<<< HEAD
-        <div className='subscribe '>
-            <div className="d-flex flex-column  container ">
-                <div className="card   navbarstyle  m-3 p-5 ">
-
-                    <div className="card-body">
-                        <h5 className="card-title">SERVICES Plan & Pricing </h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div className="m-3 card  navbarstyle p-5 "> <h5 className="card-title">Portfoliyo</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
-                <div className="m-3 card  navbarstyle p-5  "> <h5 className="card-title">Client Review</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
-=======
         <div className="container">
             <div className="row">
                 <h1 className='m-2'>Services</h1>
@@ -97,7 +82,6 @@ const Services = () => {
 
                     {/*--------------------- Ending Div  ---------------------*/}
                 </div>
->>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
             </div>
         </div>
     );

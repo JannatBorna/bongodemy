@@ -15,16 +15,13 @@ import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
 // import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
-<<<<<<< HEAD
 import Courses from './Component/pages/Courses/Courses';
-=======
 import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
 import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
 import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
 
 import Particles from "react-tsparticles";
 
->>>>>>> 951bd8da1a4d4267d7e65648d1e70e7c34e40197
 
 
 function App() {
