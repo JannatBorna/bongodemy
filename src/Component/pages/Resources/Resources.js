@@ -14,7 +14,7 @@ return (
                     <button to="" className='mt-4 resources_text'>Article</button>
                     </div>
 
-                    <div className='article'>
+                <div className='article mb-5'>
                     <button to="" className='mt-4 resources_text'>E-Book</button>
                     </div>
                 </div>
