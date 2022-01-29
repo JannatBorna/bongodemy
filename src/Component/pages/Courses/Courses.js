@@ -37,20 +37,24 @@ const Courses = () => {
             <div class="card learn " >
                 <h5 class="card-title">What you will learn?</h5>
                 <div class="container align-items-start card-body">
-
                     <li>Secure Lab Setup and Essential Linux system commands.</li>
                     <li >Website penetration testing.</li>
                     <li>System hacking using Metasploit</li>
-                    <li>Secure Lab Setup and Essential Linux system commands.</li>
-                    <li>Secure Lab Setup and Essential Linux system commands.</li>
-                    <li>Secure Lab Setup and Essential Linux system commands.</li>
+                    <li>Buffer Overflow.</li>
+                    <li>Cryptography.</li>
+                    <li>Footprinting & Information Gathering.</li>
 
                 </div>
 
             </div>
-            <div className='curriculum'>
+            <div className='curriculum my-5 '>
 
-                <h2>curriculum for the course</h2></div>
+                <h2>curriculum for the course</h2>
+                <h4>Requirments</h4>
+
+
+
+            </div>
         </div >
     );
 };
