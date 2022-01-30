@@ -220,7 +220,23 @@ const Courses = () => {
 
 
                                         </tbody>
-                                    </table></div></div></div>
+                                    </table>
+
+                                </div>
+                                <div className="container">
+                                    <div className="row justify-content-start">
+                                        <div className='col-4'>
+                                            <h2>student feedback</h2>
+                                            <h1>0</h1>
+                                            <h6>average rating</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
