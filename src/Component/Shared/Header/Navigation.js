@@ -1,11 +1,15 @@
 import React from 'react';
 import './Navigation.css'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import {
 
     Link
 } from "react-router-dom";
+import useAuth from '../../../Hooks/useAuth';
+
 const Navigation = () => {
+
+    const {user,logOut} =useAuth()
     return (
 
         <Navbar className='navbarstyle'  expand="lg ">
@@ -42,6 +46,7 @@ const Navigation = () => {
 
 
                          <button className='btn btn-outline-success'>
+                         
                          <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
                          </button>
 
