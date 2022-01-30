@@ -9,7 +9,7 @@ import useAuth from '../../../Hooks/useAuth';
 
 const Navigation = () => {
 
-    const {user,logOut} =useAuth()
+    //const {user,logOut} =useAuth()
     return (
 
         <Navbar className='navbarstyle'  expand="lg ">
