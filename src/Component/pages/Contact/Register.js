@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Register.css'
-import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider } from "firebase/auth";
+import { getAuth  } from "firebase/auth";
 import register from './images/register.svg'
 import useAuth from '../../../Hooks/useAuth';
 const Register = () => {

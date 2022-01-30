@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import login from './images/login.svg'
@@ -11,6 +11,8 @@ import useAuth from '../../../Hooks/useAuth';
 
 
 const Login = () => {
+
+    const [loginData, setLoginData] = useState({});
     const { handleGoogleSignIn, loginUser, user, isLoading, error,logOut } = useAuth();
 
     // const handleGoogleSignIn = () => {
@@ -21,14 +23,24 @@ const Login = () => {
     //             console.log(user);
     //         });
     // }
+    const handleOnchange = e =>{
+        const field = e.target.type;
+        const value = e.target.value;
+        const newLoginData = { ...loginData };
+        newLoginData[field] = value;
+        setLoginData(newLoginData);
+    }
+    //console.log(loginData.email);
+
     const refreshPage = ()=>{
         window.location.reload();
      }
     const handleEmailPassLogin = e => {
+        loginUser(loginData.email,loginData.password)
         e.preventDefault();
-        loginUser()
+        
     }
-    console.log(user);
+   
     return (
         <div>
             <div className='bg-col'>
@@ -43,7 +55,7 @@ const Login = () => {
                                             Email Address
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control id='form-color' type="email" placeholder="name@example.com" />
+                                    <Form.Control  onChange={handleOnchange} id='form-color' type="email" placeholder="name@example.com" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" >
                                     <Form.Label>
@@ -51,7 +63,7 @@ const Login = () => {
                                             Password
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control id='form-color' type="password" />
+                                    <Form.Control onChange={handleOnchange} id='form-color' type="password" />
                                 </Form.Group>
                                 <div className="text-danger my-2" style={{ margin: '5px', backgroundColor: 'white', textAlign: 'center' }}>{error}</div>
 

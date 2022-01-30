@@ -17,14 +17,12 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user;
-                // const destination = location?.state?.from || '/';
-                // history.replace(destination);
-                console.log(user);
+               // console.log(user);
                 setError('');
             })
     }
-    //********************************** */
-    const registerUser = (email, password) => {
+    //**********************************/
+    const registerUser = (email, password,name) => {
         if (password.length < 6) {
             setError('Password Must be 6 character long');
             return;
@@ -54,7 +52,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
-                // console.log(user);
+                 console.log(user);
                 setError('');
             })
             .catch(error => {
@@ -82,6 +80,7 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
             // Sign-out successful.
+            
         }).catch((error) => {
             // An error happened.
         })
