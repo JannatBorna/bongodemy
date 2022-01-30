@@ -1,0 +1,44 @@
+.bg-color{
+    background-color:#1E2D40;
+    padding: 50px;
+    margin-top: 30px;
+  
+   
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.marge-btm{
+    margin-bottom: 50px;
+}
+/* .card-color{
+    background-color:#0ED7A8 ;
+    border-radius: 5px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #1E2D40;
+} */
+#form-bgm{
+    
+    background-color:#0ED7A8 ;
+    color: #1E2D40;
+    text-align: justify;
+    padding: 30px;
+   
+}
+#form-color{
+    background-color: #1E2D40;
+    color: aliceblue;
+    
+}
+#btn-color{
+    color: rgb(248, 238, 238);
+    background-color: #1E2D40;
+}
+.home-text{
+    text-decoration: none;
+}
+.spin-col{
+    color:#0ED7A8 ;
+}

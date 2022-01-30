@@ -15,12 +15,16 @@ import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
 // import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
+import Login from './Component/pages/Contact/Login';
+import Register from './Component/pages/Contact/Register';
+import AuthProvider from './Contexts/AuthProvider';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+     <AuthProvider>
+     <Router>
         <Navigation></Navigation>
         <Switch>
           <Route path="/home">
@@ -47,9 +51,12 @@ function App() {
           <Route path="/about">
             <AboutUs />
           </Route>
-          {/* <Route path="/login">
+          <Route path="/login">
             <Login />
-          </Route> */}
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
 
 
 
@@ -59,6 +66,7 @@ function App() {
         </Switch>
       </Router>
       <Footer></Footer>
+     </AuthProvider>
     </div>
   );
 }
