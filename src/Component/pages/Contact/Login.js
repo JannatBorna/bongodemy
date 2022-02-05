@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import login from './images/login.svg'
 import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
-
 // initializeAuthentication();
 
 // const provider = new GoogleAuthProvider();
