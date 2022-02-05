@@ -1,0 +1,14 @@
+.course-card{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 900px;
+}
+.learn{
+    background-color: aliceblue;
+    width: 500px;
+   margin-left: 35px;
+  margin-top: -200PX;
+}
+.curriculum{
+    background-color: aliceblue;
+}
