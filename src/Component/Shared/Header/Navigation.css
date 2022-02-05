@@ -5,13 +5,17 @@
 }
 .navstyle{  
      color:#1E2D40 ;
+     color: white;
 
    
 }
+.imgstyle{
+  height: 60px ;
+  width: 60px;
+}
 .navstyle:hover{
     padding-bottom: 5px;
-  color: #0ED7A8;
     background-color:#1E2D40 ;
-    /* color: #0ED7A8; */
+    color: white;
   border-radius:2px ;
 }
