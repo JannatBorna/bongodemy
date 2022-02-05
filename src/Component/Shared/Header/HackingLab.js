@@ -52,11 +52,7 @@ const HackingLab = () => {
                                 <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
                                 <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
 
-<<<<<<< HEAD
                                 <NavDropdown.Item href="/battleGround"> Battle Ground</NavDropdown.Item>
-=======
-                                <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
->>>>>>> alamin
                             </NavDropdown>
                         </div>
                     </div>
