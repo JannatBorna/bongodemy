@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import login from './images/login.svg'
 import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
+import { FcGoogle } from "react-icons/fc";
 
+//import { FcGoogle } from "react-icons/fc";
 // initializeAuthentication();
 
 // const provider = new GoogleAuthProvider();
@@ -15,14 +17,8 @@ const Login = () => {
     const [loginData, setLoginData] = useState({});
     const { handleGoogleSignIn, loginUser, user, isLoading, error,logOut } = useAuth();
 
-    // const handleGoogleSignIn = () => {
-    //     const auth = getAuth();  
-    //     signInWithPopup(auth, provider)
-    //         .then(result => {
-    //             const user = result.user;
-    //             console.log(user);
-    //         });
-    // }
+   
+    
     const handleOnchange = e =>{
         const field = e.target.type;
         const value = e.target.value;
@@ -67,7 +63,7 @@ const Login = () => {
                                 </Form.Group>
                                 <div className="text-danger my-2" style={{ margin: '5px', backgroundColor: 'white', textAlign: 'center' }}>{error}</div>
 
-                                <Button id='btn-color' type="submit">
+                                <Button  id='btn-color' type="submit">
                                     Login
                                 </Button>
                                  <Button onClick={refreshPage} id='btn-color' style={{ margin: '5px' }}>Refresh</Button>
@@ -75,8 +71,8 @@ const Login = () => {
                             {isLoading && <div class="spinner-border spin-col" role="status">
                                 <span class="sr-only"></span>
                             </div>}
-                            <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px' , width:'300px', }}>Google Sign in </Button>
-                            
+                           
+                            <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px' , width:'200px' }}> <span> <FcGoogle/> </span> Google Sign in </Button>
                             {user?.email && <div className="alert alert-success" role="alert">
                             Login Successful !!!
                         </div>}
