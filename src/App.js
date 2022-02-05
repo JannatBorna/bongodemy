@@ -23,6 +23,9 @@ import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird'
 
 import Particles from "react-tsparticles";
 import Courses from './Component/pages/Courses/Courses';
+import Login from './Component/pages/Contact/Login';
+import Register from './Component/pages/Contact/Register';
+import AuthProvider from './Contexts/AuthProvider';
 
 
 
@@ -36,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -114,63 +118,68 @@ function App() {
           },
           detectRetina: true,
         }}
-/>
-      
-      <Router>
-        <Navigation></Navigation>
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/cyberBulling">
-            <CyberBulling />
-          </Route>
-          <Route path="/cyberCrime">
-            <CyberCrime />
-          </Route>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/training">
-            <Training />
-          </Route>
-          <Route path="/resources">
-            <Resources />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/courses">
-            <Courses />
-          </Route>
-          <Route path="/about">
-            <AboutUs />
-          </Route>
-          {/* <Route path="/login">
-            <Login />
-          </Route> */}
-          <Route path="/complainform">
-            <ComplainForm />
-          </Route>
-          <Route path="/complainformsec">
-           <ComplainFormSec/>
-          </Route>
-          <Route path="/complainformthird">
-           <ComplainFormThird/>
-          </Route>
-          <Route path="/hackingLab">
-            <HackingLab />
-          </Route>
+      />
+      <AuthProvider>
+        <Router>
+          <Navigation></Navigation>
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/cyberBulling">
+              <CyberBulling />
+            </Route>
+            <Route path="/cyberCrime">
+              <CyberCrime />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route path="/training">
+              <Training />
+            </Route>
+            <Route path="/resources">
+              <Resources />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/courses">
+              <Courses />
+            </Route>
+            <Route path="/about">
+              <AboutUs />
+            </Route>
 
+            <Route path="/complainform">
+              <ComplainForm />
+            </Route>
+            <Route path="/complainformsec">
+              <ComplainFormSec />
+            </Route>
+            <Route path="/complainformthird">
+              <ComplainFormThird />
+            </Route>
+            <Route path="/hackingLab">
+              <HackingLab />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
 
-
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-      <Footer></Footer>
-
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+        <Footer></Footer>
+      </AuthProvider>
     </div>
   );
 }

@@ -5,7 +5,6 @@ import login from './images/login.svg'
 import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
 import { FcGoogle } from "react-icons/fc";
-
 //import { FcGoogle } from "react-icons/fc";
 // initializeAuthentication();
 
