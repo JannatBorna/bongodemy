@@ -1,17 +1,78 @@
-.navbarstyle{
+.navbarstyle {
+  background-color: #1E2D40 !important;
+}
 
-  color:#1E2D40;
-    background-color: #0ED7A8;
+.header_logo {
+  width: 200px;
+  height: 40px;
 }
 .navstyle{  
      color:#1E2D40 ;
-
-   
+     color: white;
+}
+.navbar_text {
+  font-family: cursive;
+  font-size: 18px;
+}
+.imgstyle{
+  height: 60px ;
+  width: 60px;
 }
 .navstyle:hover{
     padding-bottom: 5px;
-  color: #0ED7A8;
     background-color:#1E2D40 ;
-    /* color: #0ED7A8; */
+    color: white;
   border-radius:2px ;
+}
+
+#dropdown-basic:hover {
+  background-color: #0ED7A8 !important;
+  Color: black !important;
+}
+
+.navstyle {
+  color: #f7f7f7 !important;
+}
+
+.navstyle:hover {
+  padding-bottom: 5px;
+  color: #0ED7A8 !important;
+  background-color: #1E2D40 !important;
+  border-radius: 2px;
+}
+
+/* .dropdown_color {
+  color: black !important;
+} */
+
+#dropdown-basic {
+  background-color: #1E2D40 !important;
+}
+
+
+.dropdown_item {
+  background-color: #1E2D40 !important;
+  color: rgb(8, 8, 8) !important;
+  font-family: cursive;
+}
+
+.dropdown_text:hover {
+  background-color: #0ED7A8 !important;
+  color: black !important;
+}
+
+.signUp_button {
+  width: 120px;
+  height: 40px;
+  background-color: #0ED7A8 !important;
+  color: black;
+  border-radius: 7px;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+.signUp_button:hover {
+  background-color: #1E2D40 !important;
+  color: white !important;
+  font-family: cursive;
 }

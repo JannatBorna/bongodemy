@@ -1,0 +1,15 @@
+h1,
+h5 {
+  color: #0ed7a8;
+}
+
+.service-holder {
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  border-radius: 25px;
+  background: linear-gradient(145deg, #203044, #1b293a);
+  box-shadow: 35px 35px 55px #0c121a, -35px -35px 55px #304866;
+}
+
+p {
+  color: aliceblue;
+}
