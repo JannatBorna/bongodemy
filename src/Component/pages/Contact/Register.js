@@ -109,7 +109,12 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <h6 className='text-white'>Already registered? <Link to="/login">Please Login</Link></h6>
+            {
+              user?.email?
+              <h6></h6>
+                :
+            <h6 className='text-white mb-5'>Already registered? <Link to="/login">Please Login</Link></h6>
+            }
         </div>
 
     );

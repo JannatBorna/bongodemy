@@ -1,21 +1,26 @@
 import React from 'react';
 import './Navigation.css'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import logo from '../../../images/icon/BongoDemy-Logo-Transparent.png'
+import useAuth from '../../../Hooks/useAuth'
+
 const Navigation = () => {
+
+    const { logOut, user } = useAuth();
+    
     return (
 
         <Navbar className='navbarstyle' expand="lg ">
             <Container fluid>
                 <Navbar.Brand className='text-white' href="#">
-                    <img src={logo} alt="" className='header_logo'/>
+                    <img src={logo} alt="" className='header_logo' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className=" text-decoration-none d-flex justify-content-around align-items-center ">
 
-                    
+
                         <Link className='text-black ms-4 text-decoration-none ' to='/home'>Home</Link>
                         {/* <Link className='text-black ms-4 text-decoration-none' to='/cyberBulling'>Cyberbullying</Link>
                             <Link className='text-black ms-4 text-decoration-none' to='/cyberCrime'>Cybercrime</Link> */}
@@ -43,9 +48,22 @@ const Navigation = () => {
                         <Navbar.Text >
 
 
-                            <button className='btn btn-outline-success'>
+                            {/* <button className='btn btn-outline-success'>
+
                                 <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
-                            </button>
+                            </button> */}
+                            {
+                                user?.email ?
+                                    //<Button id='btn-color' onClick={logOut} style={{ margin: '5px'  }}>Logout</Button>
+                                    <button onClick={logOut} className='btn btn-outline-success'>
+                                        <Link className='text-black ms-4 text-decoration-none' to='/login'>Logout</Link>
+                                    </button>
+                                    :
+                                    <button className='btn btn-outline-success'>
+                                        <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
+                                    </button>
+                            }
+
 
 
 
