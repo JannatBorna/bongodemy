@@ -5,6 +5,8 @@ import login from './images/login.svg'
 import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
 import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+
 //import { FcGoogle } from "react-icons/fc";
 // initializeAuthentication();
 
@@ -14,7 +16,7 @@ import { FcGoogle } from "react-icons/fc";
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
-    const { handleGoogleSignIn, loginUser, user, isLoading, error, logOut } = useAuth();
+    const { handleGoogleSignIn,handleredirect, handleGitSignin, loginUser, user, isLoading, error, logOut } = useAuth();
 
 
 
@@ -69,10 +71,12 @@ const Login = () => {
                             {isLoading && <div class="spinner-border spin-col" role="status">
                                 <span class="sr-only"></span>
                             </div>}
-                            {error && <div class="alert alert-danger my-5" role="alert">
+                            {error && <div className="alert alert-danger my-5" role="alert">
                                 {error}
                             </div>}
                             <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px', width: '200px' }}> <span> <FcGoogle /> </span> Google Sign in </Button>
+                            <Button id='btn-color' className='my-4' onClick={handleGitSignin} style={{ margin: '10px', width: '200px' }}> <span> <FaGithub/> </span> Github Sign in </Button>
+
                             {user?.email && <div className="alert alert-success" role="alert">
                                 Login Successful !!!
                             </div>}

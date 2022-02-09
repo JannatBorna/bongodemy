@@ -40,8 +40,8 @@
     height: 100px;
     resize: none;
 }
-.icon-pad{
-    margin:8px;
+#icon-hover{
+    margin:5px;
 }
 #icon-hover:hover{
     transform: scale(1.5);

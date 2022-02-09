@@ -44,7 +44,7 @@ const Navigation = () => {
 
                     </Nav>
 
-                    <Navbar.Collapse className="d-flex justify-content-end ">
+                    <Navbar.Collapse className="d-flex justify-content-center ">
                         <Navbar.Text >
 
 
@@ -55,13 +55,13 @@ const Navigation = () => {
                             {
                                 user?.email ?
                                     //<Button id='btn-color' onClick={logOut} style={{ margin: '5px'  }}>Logout</Button>
-                                    <button onClick={logOut} className='btn btn-outline-success'>
-                                        <Link className='text-black ms-4 text-decoration-none' to='/login'>Logout</Link>
-                                    </button>
+                                    <Button id='btn-color' onClick={logOut}>
+                                        <Link className='text-black  text-decoration-none' to='/login'>Logout</Link>
+                                    </Button>
                                     :
-                                    <button className='btn btn-outline-success'>
-                                        <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
-                                    </button>
+                                    <Button id='btn-color'>
+                                        <Link className='text-black text-decoration-none' to='/login'>Signup/Login</Link>
+                                    </Button>
                             }
 
 
