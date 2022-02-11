@@ -20,12 +20,11 @@ import HackingLab from './Component/Shared/Header/HackingLab';
 import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
 import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
 import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
-
-import Particles from "react-tsparticles";
 import Courses from './Component/pages/Courses/Courses';
 import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
+import Particles from "react-tsparticles";
 
 
 
@@ -37,9 +36,9 @@ function App() {
     console.log(container);
   };
 
+  
   return (
-    <div className="App">
-
+    <div className="App"> 
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -81,7 +80,7 @@ function App() {
               value: "#0ED7A8",
             },
             links: {
-              color: "#0ED7A8",
+              color: "#00000",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -103,10 +102,10 @@ function App() {
                 enable: true,
                 value_area: 800,
               },
-              value: 20,
+              value: 15,
             },
             opacity: {
-              value: 4,
+              value: 2,
             },
             shape: {
               type: "circle",
@@ -118,7 +117,7 @@ function App() {
           },
           detectRetina: true,
         }}
-      />
+      />  
       <AuthProvider>
         <Router>
           <Navigation></Navigation>

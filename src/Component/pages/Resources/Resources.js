@@ -3,7 +3,9 @@ import { Container } from 'react-bootstrap';
 import './Resources.css';
 
 
+
 const Resources = () => {
+ 
 
 return (
     <section id="resources">
@@ -18,7 +20,6 @@ return (
                     <button to="" className='mt-4 resources_text'>E-Book</button>
                     </div>
                 </div>
-
 
             </Container>
     </section>
