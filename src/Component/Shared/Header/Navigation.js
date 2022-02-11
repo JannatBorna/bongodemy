@@ -22,7 +22,7 @@ const Navigation = () => {
                         <Link className='text-black ms-4 text-decoration-none' to='/services'>Services</Link>
                         {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
-                        <NavDropdown title="Training" className='text-black ms-4 text-decoration-none' id="basic-nav-dropdown">
+                        <NavDropdown title="Training" className='ms-4 text-decoration-none' id="basic-nav-dropdown">
                             <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
                             <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
                             <Link to='/hackingLab'>
