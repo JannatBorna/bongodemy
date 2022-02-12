@@ -1,14 +1,26 @@
 .boxoo {
-  background-color: #0ed7a8!important;
-  height: 230px!important;
+  background-color: #0ed7a8 !important;
+  height: 230px !important;
   max-width: 300px !important;
-  border-radius: 25px!important;
-  box-shadow: 44px 44px 49px #172231, -44px -44px 49px #25384f79!important;
+  border-radius: 25px !important;
+  box-shadow: 44px 44px 49px #172231, -44px -44px 49px #25384f79 !important;
   text-decoration: none !important;
 }
 
-h4{
-    max-width: 180px !important;
-    color: #172231!important;
-    
+h4 {
+  max-width: 180px !important;
+  color: #172231 !important;
+
+}
+
+.card_section:hover {
+  z-index: 5;
+  box-shadow: 0 8px 50px rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.card_text{
+  color: rgb(48, 51, 54) !important;
+  font-weight: 600;
+  font-family: cursive;
 }
