@@ -25,6 +25,7 @@ import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
 import Particles from "react-tsparticles";
+import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 
 
 
@@ -158,6 +159,9 @@ function App() {
             </Route>
             <Route path="/complainformthird">
               <ComplainFormThird />
+            </Route>
+            <Route path="/getConsultation">
+              <GetConsultation />
             </Route>
             <Route path="/hackingLab">
               <HackingLab />
