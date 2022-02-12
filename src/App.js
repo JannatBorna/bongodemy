@@ -18,6 +18,7 @@ import Contact from './Component/pages/Contact/Contact';
 import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
 import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
 import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
+import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
           </Route>
           <Route path="/complainformthird">
            <ComplainFormThird/>
+          </Route>
+          <Route path="/getConsultation">
+          <GetConsultation/>
           </Route>
 
 
