@@ -5,8 +5,9 @@ const CyberCrime = () => {
     return (
         <div className="container">
         <div className="row mt-5">
-            <Cards text="Complain Cyber-crime" follow="#"></Cards>
-            <Cards text="Get a Consultation" follow="#"></Cards>
+            <Cards text="Complain Cyber-crime" follow="complainform"></Cards>
+            
+            <Cards text="Get a Consultation" follow="getConsultation"></Cards>
 
         </div>
         <div class="row my-5">
