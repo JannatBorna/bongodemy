@@ -6,6 +6,8 @@ import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 //import { FcGoogle } from "react-icons/fc";
 // initializeAuthentication();
@@ -18,7 +20,8 @@ const Login = () => {
     const [loginData, setLoginData] = useState({});
     const { handleGoogleSignIn,handleredirect, handleGitSignin, loginUser, user, isLoading, error, logOut } = useAuth();
 
-
+    const location = useLocation();
+    const history = useHistory();
 
     const handleOnchange = e => {
         const field = e.target.type;
@@ -33,7 +36,7 @@ const Login = () => {
         window.location.reload();
     }
     const handleEmailPassLogin = e => {
-        loginUser(loginData.email, loginData.password)
+        loginUser(loginData.email, loginData.password,location,history)
         e.preventDefault();
 
     }
@@ -80,6 +83,8 @@ const Login = () => {
                             {user?.email && <div className="alert alert-success" role="alert">
                                 Login Successful !!!
                             </div>}
+                            {user?.email && <Button id='btn-color' > <Link className='home-text' to="/home">Go to Home</Link> </Button>}
+
                         </div>
                         <div className='col-md-5'>
                             <img src={login} width="80%" alt="" />

@@ -27,12 +27,7 @@ const useFirebase = () => {
             })
     }
 
-    //sign in with redirect
-    const handleredirect = () => {
-        signInWithRedirect(auth, gitprovider);
-
-    }
-
+   
 
     const handleGoogleSignIn = (location, history) => {
         signInWithPopup(auth, googleProvider)
@@ -46,7 +41,7 @@ const useFirebase = () => {
             })
     }
     //**********************************/
-    const registerUser = (email, password, name) => {
+    const registerUser = (email, password,location,history) => {
         if (password.length < 6) {
             setError('Password Must be 6 character long');
             return;
@@ -60,10 +55,13 @@ const useFirebase = () => {
             .then(result => {
                 const newUser = { email, password };
                 setUser(newUser);
+                
                 const user = result.user;
                 //console.log(newUser);
 
                 setError('');
+                //const destination = location?.state?.from || '/';
+                
             })
             .catch(error => {
                 setError(error.message);
@@ -71,12 +69,12 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    const loginUser = (email, password) => {
+    const loginUser = (email, password,location,history) => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user;
-                console.log(user);
+                const destination = location?.state?.from || '/';
+                history.replace(destination);
                 setError('');
             })
             .catch(error => {
@@ -115,7 +113,6 @@ const useFirebase = () => {
         user,
         handleGoogleSignIn,
         handleGitSignin,
-        handleredirect,
         logOut,
         registerUser,
         loginUser,

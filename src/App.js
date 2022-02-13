@@ -26,6 +26,7 @@ import Courses from './Component/pages/Courses/Courses';
 import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
+import PrivateRoute from './Component/pages/Contact/PrivateRoute';
 
 
 
@@ -141,9 +142,9 @@ function App() {
             <Route path="/resources">
               <Resources />
             </Route>
-            <Route path="/contact">
+            <PrivateRoute path="/contact">
               <Contact />
-            </Route>
+            </PrivateRoute>
             <Route path="/courses">
               <Courses />
             </Route>
