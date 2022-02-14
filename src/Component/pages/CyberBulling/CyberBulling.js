@@ -11,7 +11,7 @@ const CyberBulling = () => {
 
             </div>
             <div class="row my-5">
-                <Cards text="Cyberbullying Resources" follow="#"></Cards>
+                <Cards text="Cyberbullying Resources" follow="hackingLab"></Cards>
                 <Cards text="Emergency Helpline" follow="#"></Cards>
             </div>
         </div>
