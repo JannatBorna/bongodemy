@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from '../../subComp/Cards';
+import ComingPage from '../ComingPage/ComingPage';
 
 const Home = () => {
     
@@ -13,9 +14,10 @@ const Home = () => {
 
                 </div>
                 <div class="row my-5">
-                    <Cards text="Cyber Security Solution" follow ="#"></Cards>
-                    <Cards text="Cyber Security Training" follow ="#"></Cards>
+                <Cards text="Cyber Security Solution" follow="comingPage"></Cards>
+                <Cards text="Cyber Security Training" follow="comingPage"></Cards>
                 </div>
+                <ComingPage></ComingPage>
             </div>
     );
 };

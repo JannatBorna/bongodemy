@@ -25,6 +25,8 @@ import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
 import Particles from "react-tsparticles";
+import ComingPage from './Component/pages/ComingPage/ComingPage';
+
 
 
 
@@ -125,6 +127,7 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
+           
             <Route path="/cyberBulling">
               <CyberBulling />
             </Route>
@@ -149,7 +152,11 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
-
+            
+            <Route path="/comingPage">
+              <ComingPage />
+            </Route>
+            
             <Route path="/complainform">
               <ComplainForm />
             </Route>
@@ -175,6 +182,9 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
+
+           
+            
           </Switch>
         </Router>
         <Footer></Footer>

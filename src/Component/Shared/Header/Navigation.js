@@ -23,13 +23,13 @@ const Navigation = () => {
                         {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
                         <NavDropdown title="Training" className='ms-4 text-decoration-none' id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
+                            <NavDropdown.Item href="/comingPage">Free Training</NavDropdown.Item>
                             <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
                             <Link to='/hackingLab'>
                                 <NavDropdown.Item href="/hackingLab">Hacking Lab</NavDropdown.Item>
 
                             </Link>
-                            <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
+                            <NavDropdown.Item href="/comingPage">Battle Ground</NavDropdown.Item>
                         </NavDropdown>
 
                         <Link className='text-black ms-4 text-decoration-none' to='/resources'>Resources</Link>
