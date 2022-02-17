@@ -152,6 +152,10 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
+            
+            <Route path="/comingPage">
+              <ComingPage />
+            </Route>
 
             <Route path="/complainform">
               <ComplainForm />
@@ -179,9 +183,7 @@ function App() {
               <Home />
             </Route>
 
-            <Route path="/comingPage">
-              <ComingPage />
-            </Route>
+           
             
           </Switch>
         </Router>
