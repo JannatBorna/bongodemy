@@ -1,9 +1,6 @@
 import React from 'react';
 import Cards from '../../subComp/Cards';
-<<<<<<< HEAD
 
-=======
->>>>>>> borna
 const Home = () => {
     
     
