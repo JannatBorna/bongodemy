@@ -25,12 +25,8 @@ import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
 import Particles from "react-tsparticles";
-<<<<<<< HEAD
 import ComingPage from './Component/pages/ComingPage/ComingPage';
 
-=======
-import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
->>>>>>> 0fa1f8f6975149c8389de1e74911fda1e682bc15
 
 
 
@@ -156,11 +152,7 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
-            
-            <Route path="/comingPage">
-              <ComingPage />
-            </Route>
-            
+
             <Route path="/complainform">
               <ComplainForm />
             </Route>
@@ -169,9 +161,6 @@ function App() {
             </Route>
             <Route path="/complainformthird">
               <ComplainFormThird />
-            </Route>
-            <Route path="/getConsultation">
-              <GetConsultation />
             </Route>
             <Route path="/hackingLab">
               <HackingLab />
@@ -190,7 +179,9 @@ function App() {
               <Home />
             </Route>
 
-           
+            <Route path="/comingPage">
+              <ComingPage />
+            </Route>
             
           </Switch>
         </Router>
