@@ -3,6 +3,7 @@ import Campaign from '../../subComp/Campaign/Campaign';
 import Cards from '../../subComp/Cards';
 import Counter from '../../subComp/Counter/Counter';
 import FreeReport from '../../subComp/FreeReport/FreeReport';
+import WhyUs from '../../subComp/WhyUs/WhyUs';
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       <hr />
       <hr />
       <h1>Our Achievements</h1>
-      <div className="ms-5 d-flex flex-wrap">
+      <div className="wrapper">
         <Counter dvalue="100+" dname="Counting - cyberbullying victim’s help" />
         <Counter dvalue="150+" dname="Cyber Security Service" />
         <Counter dvalue="320+" dname="Bugs Found" />
@@ -51,6 +52,9 @@ const Home = () => {
       <hr />
       <hr />
       <FreeReport/>
+      <hr />
+      <hr />
+      <WhyUs/>
     </div>
   );
 };
