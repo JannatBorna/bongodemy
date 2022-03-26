@@ -2,6 +2,7 @@ import React from 'react';
 import Campaign from '../../subComp/Campaign/Campaign';
 import Cards from '../../subComp/Cards';
 import Counter from '../../subComp/Counter/Counter';
+import FreeReport from '../../subComp/FreeReport/FreeReport';
 
 const Home = () => {
   return (
@@ -41,11 +42,15 @@ const Home = () => {
 
       <hr />
       <hr />
-      <h1>How We Start</h1>
-      <div className='w-100 howWe'>
+      <h1 className='mt-5'>How We Start</h1>
+      <div className='w-100 howWe mb-5'>
         {/* <img src="../../../images/howwework/howwework.png" alt="" /> */}
         <img className='w-100 ' src={require('../../../images/howwework/howwework.png')} alt=""  />
       </div>
+
+      <hr />
+      <hr />
+      <FreeReport/>
     </div>
   );
 };

@@ -1,0 +1,50 @@
+.red-btn {
+  padding: 7px 35px;
+  background: #0ED7A8;
+  letter-spacing: inherit;
+  border: 2px solid #0ED7A8;
+  border-radius: 0;
+  color: #1E2D40;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 235px;
+}
+
+.red-btn:hover {
+  background: transparent;
+  color: #0ED7A8;
+}
+
+input {
+  padding: 12px 10px;
+  width: 225px;
+  display: block;
+  margin-bottom: 0;
+  padding: 12px 19px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out 0.3s;
+  transition: border-color ease-in-out 0.3s;
+  outline: none;
+  width: 280px;
+  margin-right: 20px;
+}
+
+.reportP{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 300;
+}
+
+.text-left{
+    text-align: left!important;
+}
