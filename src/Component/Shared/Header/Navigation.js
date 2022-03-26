@@ -22,7 +22,7 @@ const Navigation = () => {
                         <Link className='text-white ms-4 text-decoration-none' to='/services'>Services</Link>
                         {/* <Link className='text-black ms-4 text-decoration-none' to='/training'>Training</Link> */}
 
-                        <NavDropdown title="Training" className='text-white ms-4 text-decoration-none' >
+                        <NavDropdown title="Training" className='text-white ms-4 text-decoration-none' id="basic-nav-dropdown">
                             <NavDropdown.Item href="/freeTraining">Free Training</NavDropdown.Item>
                             <NavDropdown.Item href="/courses">Courses</NavDropdown.Item>
                             <Link to='/hackingLab'>
@@ -43,7 +43,7 @@ const Navigation = () => {
                         <Navbar.Text >
 
 
-                            <button className='btn btn-outline-success'>
+                            <button className='signUp_button'>
                                 <Link className='text-black ms-4 text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
 

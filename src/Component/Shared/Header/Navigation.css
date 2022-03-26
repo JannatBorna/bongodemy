@@ -74,17 +74,22 @@
 }
 
 .signUp_button {
-  width: 120px;
+  width: 160px;
   height: 40px;
   background-color: #0ED7A8 !important;
   color: black;
   border-radius: 7px;
   font-family: cursive;
   font-size: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.5s;
 }
 
 .signUp_button:hover {
-  background-color: #1E2D40 !important;
-  color: white !important;
-  font-family: cursive;
+ 
+    z-index: 5;
+    transform: scale(1.05);
+  
 }

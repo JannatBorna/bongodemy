@@ -12,7 +12,9 @@ h4 {
   color: #172231 !important;
 
 }
-
+.card_section{
+  transition: 0.5s;
+}
 .card_section:hover {
   z-index: 5;
   box-shadow: 0 8px 50px rgb(255, 255, 255);
