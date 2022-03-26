@@ -26,6 +26,8 @@ import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
 import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
+import Complainforms from './Component/pages/ComplainForm/Complainforms';
+import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
 
 
 
@@ -151,8 +153,11 @@ function App() {
               <AboutUs />
             </Route>
 
-            <Route path="/complainform">
-              <ComplainForm />
+            <Route path="/complainforms">
+              <Complainforms />
+            </Route>
+            <Route path="/crimecomplainform">
+              <CrimeComplainform />
             </Route>
             <Route path="/complainformsec">
               <ComplainFormSec />
