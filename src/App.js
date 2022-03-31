@@ -17,7 +17,7 @@ import AboutUs from './Component/pages/AboutUs/AboutUs';
 import Contact from './Component/pages/Contact/Contact';
 import HackingLab from './Component/Shared/Header/HackingLab';
 
-import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
+
 import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
 import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
 import Courses from './Component/pages/Courses/Courses';
@@ -25,8 +25,9 @@ import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
 import Particles from "react-tsparticles";
-import ComingPage from './Component/pages/ComingPage/ComingPage';
-
+import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
+import Complainforms from './Component/pages/ComplainForm/Complainforms';
+import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
 
 
 
@@ -127,7 +128,6 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-           
             <Route path="/cyberBulling">
               <CyberBulling />
             </Route>
@@ -152,19 +152,21 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
-            
-            <Route path="/comingPage">
-              <ComingPage />
-            </Route>
 
-            <Route path="/complainform">
-              <ComplainForm />
+            <Route path="/complainforms">
+              <Complainforms />
+            </Route>
+            <Route path="/crimecomplainform">
+              <CrimeComplainform />
             </Route>
             <Route path="/complainformsec">
               <ComplainFormSec />
             </Route>
             <Route path="/complainformthird">
               <ComplainFormThird />
+            </Route>
+            <Route path="/getConsultation">
+              <GetConsultation />
             </Route>
             <Route path="/hackingLab">
               <HackingLab />
@@ -182,9 +184,6 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-
-           
-            
           </Switch>
         </Router>
         <Footer></Footer>

@@ -21,7 +21,7 @@ const Home = () => {
       <hr />
       <h1>Our Achievements</h1>
       <div className="wrapper">
-        <Counter dvalue="100+" dname="Counting - cyberbullying victim’s help" />
+        <Counter dvalue="100+" dname="Counting - cyberbullying victim's help" />
         <Counter dvalue="150+" dname="Cyber Security Service" />
         <Counter dvalue="320+" dname="Bugs Found" />
         <Counter dvalue="65+" dname="Clients Served" />
