@@ -1,0 +1,13 @@
+.coming_page {
+    color: rgb(170, 150, 60) !important;
+    font-family: sans-serif;
+    margin-top: 190px;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+.coming_section{
+    width: 100%;
+    height: 310px;
+}

@@ -28,6 +28,8 @@ import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
+import ComingPage from './Component/pages/ComingPage/ComingPage';
+
 
 
 
@@ -128,6 +130,7 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
+           
             <Route path="/cyberBulling">
               <CyberBulling />
             </Route>
@@ -152,6 +155,10 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
+            
+            <Route path="/comingPage">
+              <ComingPage />
+            </Route>
 
             <Route path="/complainforms">
               <Complainforms />
@@ -164,9 +171,6 @@ function App() {
             </Route>
             <Route path="/complainformthird">
               <ComplainFormThird />
-            </Route>
-            <Route path="/getConsultation">
-              <GetConsultation />
             </Route>
             <Route path="/hackingLab">
               <HackingLab />
@@ -184,6 +188,9 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
+
+           
+            
           </Switch>
         </Router>
         <Footer></Footer>

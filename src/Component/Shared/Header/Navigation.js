@@ -29,7 +29,7 @@ const Navigation = () => {
                                 <NavDropdown.Item href="/hackingLab">Hacking Lab</NavDropdown.Item>
 
                             </Link>
-                            <NavDropdown.Item href="/battleGround">Battle Ground</NavDropdown.Item>
+                            <NavDropdown.Item href="/comingPage">Battle Ground</NavDropdown.Item>
                         </NavDropdown>
 
                         <Link className='text-white ms-4 text-decoration-none' to='/resources'>Resources</Link>
