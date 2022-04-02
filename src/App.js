@@ -17,16 +17,21 @@ import AboutUs from './Component/pages/AboutUs/AboutUs';
 import Contact from './Component/pages/Contact/Contact';
 import HackingLab from './Component/Shared/Header/HackingLab';
 
-import ComplainForm from './Component/pages/ComplainForm/ComplainForm';
+
 import ComplainFormSec from './Component/pages/ComplainForm/ComplainFormSec';
 import ComplainFormThird from './Component/pages/ComplainForm/ComplainFormThird';
-
-import Particles from "react-tsparticles";
 import Courses from './Component/pages/Courses/Courses';
 import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
+<<<<<<< HEAD
 import PrivateRoute from './Component/pages/Contact/PrivateRoute';
+=======
+import Particles from "react-tsparticles";
+import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
+import Complainforms from './Component/pages/ComplainForm/Complainforms';
+import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
+>>>>>>> a89987ad17f0a0a87449fe9f31beaede556bbb98
 
 
 
@@ -38,9 +43,9 @@ function App() {
     console.log(container);
   };
 
+  
   return (
-    <div className="App">
-
+    <div className="App"> 
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -82,7 +87,7 @@ function App() {
               value: "#0ED7A8",
             },
             links: {
-              color: "#0ED7A8",
+              color: "#00000",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -104,10 +109,10 @@ function App() {
                 enable: true,
                 value_area: 800,
               },
-              value: 20,
+              value: 15,
             },
             opacity: {
-              value: 4,
+              value: 2,
             },
             shape: {
               type: "circle",
@@ -119,7 +124,7 @@ function App() {
           },
           detectRetina: true,
         }}
-      />
+      />  
       <AuthProvider>
         <Router>
           <Navigation></Navigation>
@@ -152,14 +157,20 @@ function App() {
               <AboutUs />
             </Route>
 
-            <Route path="/complainform">
-              <ComplainForm />
+            <Route path="/complainforms">
+              <Complainforms />
+            </Route>
+            <Route path="/crimecomplainform">
+              <CrimeComplainform />
             </Route>
             <Route path="/complainformsec">
               <ComplainFormSec />
             </Route>
             <Route path="/complainformthird">
               <ComplainFormThird />
+            </Route>
+            <Route path="/getConsultation">
+              <GetConsultation />
             </Route>
             <Route path="/hackingLab">
               <HackingLab />

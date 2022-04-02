@@ -1,0 +1,41 @@
+.with-h6-style{
+    margin-left: 10px;
+    width: 90%;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    color: #0ED7A8;
+    text-align: left;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.text-color-theme {
+    color: #0ED7A8;
+}
+
+i.icon.fa:before {
+    padding-left: 1px;
+    padding-right: 10px;
+}
+
+.fa.fa-dollar:before, .fa.fa-usd:before {
+    content: "\f155";
+}
+
+
+
+.panels-service-content{
+    text-align: left;
+}
+

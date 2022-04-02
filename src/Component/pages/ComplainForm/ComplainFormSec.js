@@ -1,6 +1,10 @@
 import React from "react";
 import "./ComplainForm.css";
-import { faTimesCircle, faArrowRight ,faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimesCircle,
+  faArrowRight,
+  faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
@@ -15,10 +19,10 @@ const ComplainFormSec = () => {
       className="container mt-5"
     >
       <h1>অভিযোগ ফরম</h1>
+      <small>জরুরী প্রয়োজনেঃ ০১৬১১ ৮৬০ ৯৯৯ নাম্বারে ফোন দিন ।</small>
       <ProgressBar completed={63} bgColor="#0ED7A8" className="my-3" />
-      <p>জরুরী প্রয়োজনেঃ ০১৬১১ ৮৬০ ৯৯৯ নাম্বারে ফোন দিন ।</p>
-      <h5>তুমি যে মাধ্যমে হয়রানি (সাইবার বুলিং) এর শিকার হয়েছে ? *</h5>
 
+      <h5>তুমি যে মাধ্যমে হয়রানি (সাইবার বুলিং) এর শিকার হয়েছে ? *</h5>
       <select class="form-select">
         <option selected>Please select</option>
         <option value="1">Facebook</option>
@@ -90,9 +94,10 @@ const ComplainFormSec = () => {
         <i>
           অভিযুক্ত বাক্তির নাম ,মোবাইল নাম্বার , ঠিকানা ইত্যাদি জানা থাকলে দিন
         </i>
-      </small><br></br>
+      </small>
+      <br></br>
 
-      <Link to="/complainformsec" className="me-4">
+      <Link to="/complainform" className="me-4">
         <button className="complain-button">{leftarrow}পিছনে যান </button>
       </Link>
       <Link to="/complainformthird">

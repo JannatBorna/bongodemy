@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+.complainform-div{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+ 
+}
+input[type='file']{
+    background-color: #0ED7A8 !important;
+}
+.form-control{
+    background-color: #0ED7A8 !important;
+    border: none !important;
+    color: white !important;
+}
 .complain-button{
     padding:8px 200px;
     margin:30px 0px;
@@ -7,6 +21,7 @@
     border: none;
     text-decoration: none;
     color: white;
+    
 }
 
 .complainForm{
