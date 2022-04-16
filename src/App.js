@@ -28,6 +28,7 @@ import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
+import NotFound from './Component/pages/NotFound/NotFound';
 
 
 
@@ -125,6 +126,7 @@ function App() {
         <Router>
           <Navigation></Navigation>
           <Switch>
+            
             <Route path="/home">
               <Home />
             </Route>
@@ -190,8 +192,9 @@ function App() {
             </Route>
 
           </Switch>
+          <Footer></Footer>
         </Router>
-        <Footer></Footer>
+        
       </AuthProvider>
     </div>
   );

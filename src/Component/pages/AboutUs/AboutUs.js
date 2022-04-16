@@ -6,22 +6,13 @@ const AboutUs = () => {
     return (
         <div style={{backgroundColor:"#1e2d40"}}>
            <div className='pt-5 pb-5 ms-5 me-5' >
-            <p className='' style={{backgroundColor:"#0ED7A8" , height:"50px"}}>
-<<<<<<< HEAD
-            <Link style={{color:"black", textDecoration:"none"}} to="/overview">Overview</Link></p>
-            <p style={{backgroundColor:"#0ED7A8", height:"50px"}}><Link style={{color:"black", textDecoration:"none"}} to="/overview">Mission</Link></p>
-            <p style={{backgroundColor:"#0ED7A8", height:"50px"}}>
-            <Link style={{color:"black", textDecoration:"none"}} to="/overview">Vision</Link></p>
-            <p style={{backgroundColor:"#0ED7A8", height:"50px"}}>
-            <Link style={{color:"black", textDecoration:"none"}} to="/overview">Team</Link></p>
-=======
+            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8" , height:"50px"}}>
                     <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Overview</Link></p>
-                <p style={{ backgroundColor: "#0ED7A8", height: "50px" }}><Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Mission</Link></p>
-            <p style={{backgroundColor:"#0ED7A8", height:"50px"}}>
+                <p className='ps-3 rounded-3 p-3' style={{ backgroundColor: "#0ED7A8", height: "50px" }}><Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Mission</Link></p>
+            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8", height:"50px"}}>
                     <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Vision</Link></p>
-            <p style={{backgroundColor:"#0ED7A8", height:"50px"}}>
+            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8", height:"50px"}}>
                     <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Team</Link></p>
->>>>>>> remotes/origin/main
         </div>
         </div>
     );
