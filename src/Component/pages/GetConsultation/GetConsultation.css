@@ -1,0 +1,13 @@
+.card-div{
+    background-color: #0ed7a8;
+    height: 230px;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 44px 44px 49px #172231, -44px -44px 49px #25384f79;
+    text-decoration: none;
+    color: #172231;
+    font-weight: 800px;
+    outline: none;
+    border: none;
+    font-size: 22.83px;
+}

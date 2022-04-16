@@ -1,0 +1,27 @@
+#resources {
+    background: #1E2D40 !important;
+}
+
+.article {
+    height: 260px;
+    background-color: #0ED7A8;
+    border-radius: 7px;
+}
+
+.article:hover {
+    z-index: 1;
+    box-shadow: 0 8px 40px rgb(16, 19, 20);
+    transform: scale(1.05);
+}
+
+.resources_text {
+    text-decoration: none;
+    color: rgb(32, 32, 34) !important;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: #0ED7A8 !important;
+    border: #0ED7A8;
+   
+
+}

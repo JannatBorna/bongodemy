@@ -1,5 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  background-color: #1E2D40 !important;
+  overflow: hidden;
+  scroll-behavior: none;
 }
 
 .App-logo {
@@ -32,7 +40,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.howWe{
+  width: 100vw;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

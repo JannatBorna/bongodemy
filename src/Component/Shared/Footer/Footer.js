@@ -52,7 +52,7 @@ const Footer = () => {
                     <p>Recent Posrt 2</p>
                 </div>
                 <div className="col-md-5">
-                    <div className=" text-start ">
+                    <div className=" text-start">
                         <h3 className=''>News Letter</h3>
                     </div>
                     <hr />

@@ -1,14 +1,15 @@
 .foterstyle{
-   color:#1E2D40;
-   background-color: #0ED7A8;
-height: 50vh;
-margin-top: -20px;
-}
-.subscribe{
-    color:white;
-    background-color:#1E2D40 ;  
-}
-.subscribe:hover{
-    color:rgb(236, 225, 225);
-     
-}
+    color:#1E2D40;
+    background-color: #0ED7A8;
+ height: 50vh;
+ margin-top: -20px;
+ }
+ .subscribe{
+     color:white;
+     background-color:#1E2D40 ;  
+ }
+ .subscribe:hover{
+     color:rgb(236, 225, 225);
+      
+ }
+ 
