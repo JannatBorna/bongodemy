@@ -1,73 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import './Footer.css';
-
-// const Footer = () => {
-//     return (
-//         <div className=' foterstyle '>
-//             <div className="row ">
-//                 <div className="col-md-2 ">
-//                     <div className='justify-content-around align-items-center text-start ms-2'>
-
-//                         <div className='ms-5'>
-//                         <div className=" text-start ">
-//                             <h3 className='text-black fw-bold'>Contact</h3>
-//                         </div>
-//                         <Link className='text-black fw-bold'> Office Location  </Link>
-//                         <Link className='text-black fw-bold'> Phone Number  </Link>
-//                         <Link className='text-black fw-bold'> Telephone Number </Link>
-//                         <Link className='text-black fw-bold'> Mail</Link>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div className="col-md-2">
-//                     <div className="justify-content-around align-items-center text-start ">
-//                         <div className='mt-5'>
-//                         <div className="text-start ">
-//                             <h3 className='text-black fw-bold'> Menu</h3>
-//                         </div>
-                        
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div className="col-md-3">
-//                     <div className="text-start ">
-//                         <h3 className='text-black fw-bold'>Recent Post</h3>
-//                     </div>
-//                     <p className='text-black fw-bold'>Recent Posrt 1</p>
-//                     <p className='text-black fw-bold'>Recent Posrt 2</p>
-//                 </div>
-//                 <div className="col-md-5">
-//                 <div className='mt-5'>
-//                         <div className="text-start ">
-//                             <h3 className='text-black fw-bold'> News Latter</h3>
-//                         </div>
-//                         <Link className='text-black fw-bold'> Home </Link>
-//                         <br />
-//                         <Link className='text-black fw-bold'>Cyber-bullying</Link>
-//                         <br />
-                        
-//                         </div> 
-//                     <form>
-//                         <div class="mb-3 me-3">
-//                             <div className=" w-100 h-100 d-flex justify-content-around align-items-center">
-//                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-//                                 <button className='ms-2 btn subscribe '>Subscribe</button>
-//                             </div>
-
-//                         </div>
-//                     </form>
-//                 </div>
-//                 <div className=" mb-5 ">
-//                     <p className='mb-3'>@ All Rights Reserved By BongoDemy 2021</p>
-//                 </div>
-//             </div>
-
-//         </div>
-//     );
-// };
-
-// export default Footer;
 import React from 'react';
 import { Link } from 'react-router-dom';
 import"./Footer.css"
@@ -77,7 +7,7 @@ const Footer = () => {
         <div>
             <footer class="footer-section">
         <div class="container">
-            <div class="footer-cta pt-5 pb-5">
+            <div class="footer-cta pt-3 pb-3">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">                         
@@ -105,7 +35,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="footer-content pt-5 pb-5">
+            <div class="footer-content pt-3 pb-3">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
@@ -136,7 +66,7 @@ const Footer = () => {
                                 <li><Link to="/cyberBulling">Cyber-bullying</Link></li>
                                 <li><Link to="/cyberCrime">Cyber-crime</Link></li>
                                 <li><Link to="/">Cyber-security</Link></li>
-                                <li><Link to="/training">Cyber-traning</Link></li>                           
+                                <li><Link to="/training/courses">Cyber-traning</Link></li>                           
                                
                             </ul>
                         </div>

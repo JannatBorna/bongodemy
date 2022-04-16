@@ -41,9 +41,6 @@ const Navigation = () => {
                             <button className='signUp_button m-3'>
                                 <Link className='text-black ms-2 text-decoration-none' to='/login'>Signup/Login</Link>
                             </button>
-
-
-
                         </Navbar.Text>
 
                     </Navbar.Collapse>

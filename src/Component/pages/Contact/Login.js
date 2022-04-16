@@ -39,28 +39,28 @@ const Login = () => {
     return (
         <div>
             <div className='bg-col'>
-                <h3 className='text-white'>Login</h3>
+                <h3 className='text-white '>Login</h3>
                 <div className='bg-color'>
                     <div className='row'>
                         <div className='col-md-5 marge-btm'>
                             <Form onSubmit={handleEmailPassLogin} id='form-bgm'>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>
-                                        <h6>
+                                <Form.Group className="mb-3 bg-white">
+                                    <Form.Label className='mb-2'>
+                                        <h6 className=" bg-white">
                                             Email Address
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control  onChange={handleOnchange} id='form-color' type="email" placeholder="name@example.com" />
+                                    <Form.Control  onChange={handleOnchange} id='form-color' type="email" className="bg-white"placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" >
+                                <Form.Group className="mb-3 bg-white" >
                                     <Form.Label>
-                                        <h6>
+                                        <h6 className="mt-2 mb-2 bg-white">
                                             Password
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control onChange={handleOnchange} id='form-color' type="password" />
+                                    <Form.Control onChange={handleOnchange} id='form-color'className='bg-white ' type="password" />
                                 </Form.Group>
-                                <div className="text-danger my-2" style={{ margin: '5px', backgroundColor: 'white', textAlign: 'center' }}>{error}</div>
+                                <div className="text-danger my-2 " style={{ margin: '5px', backgroundColor: 'white', textAlign: 'center' }}>{error}</div>
 
                                 <Button  id='btn-color' type="submit">
                                     Login

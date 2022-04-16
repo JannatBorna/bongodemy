@@ -32,24 +32,24 @@ const Contact = () => {
                                             Name
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control id='form-col' type="name" placeholder="Enter your name" />
+                                    <Form.Control className='bg-white' id='form-col' type="name" placeholder="Enter your name" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Group className="mb-3 bg-white rounded" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
                                         <h5>
                                             Email Address
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control id='form-col' type="email" placeholder="name@example.com" />
+                                    <Form.Control className="mb-3 bg-white mt-3 roundrd" id='form-col' type="email" placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Group className="mb-3 bg-white mt-3 rounded" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>
                                         <h5>
                                             Describe Your Problem
                                         </h5>
                                     </Form.Label>
 
-                                    <Form.Control className='text-area-size' id='form-col' as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
+                                    <Form.Control className='text-area-size bg-white' id='form-col' as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
                                 </Form.Group>
                                 <Button id='btn-col' type="submit">
                                     Submit
