@@ -3,7 +3,7 @@ import './ComingPage.css';
 
 const ComingPage = () => {
     return (
-        <div className='coming_section mt-5 my-5'>
+        <div className='pb-5 d-flex justify-content-center'>
             <h2 className='coming_page'>Coming Soon.......</h2>
         </div>
     );

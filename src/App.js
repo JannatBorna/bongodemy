@@ -13,7 +13,6 @@ import Services from './Component/pages/Services/Services';
 import Training from './Component/pages/Training/Training';
 import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
-// import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
 import HackingLab from './Component/Shared/Header/HackingLab';
 
@@ -29,6 +28,8 @@ import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
 import NotFound from './Component/pages/NotFound/NotFound';
+import Emergency from './Component/pages/Emergency';
+import ComingPage from './Component/pages/ComingPage/ComingPage';
 
 
 
@@ -139,6 +140,9 @@ function App() {
             <Route path="/services">
               <Services />
             </Route>
+            <Route path="/emergency">
+              <Emergency />
+            </Route>
             <Route path="/training">
               <Training />
             </Route>
@@ -153,6 +157,9 @@ function App() {
             </Route>
             <Route path="/about">
               <AboutUs />
+            </Route>
+            <Route path="/comingPage">
+              <ComingPage />
             </Route>
 
             <Route path="/complainforms">
