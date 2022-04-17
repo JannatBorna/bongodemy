@@ -4,16 +4,14 @@ import { Link } from 'react-router-dom';
 const AboutUs = () => {
 
     return (
-        <div style={{backgroundColor:"#1e2d40"}}>
-           <div className='pt-5 pb-5 ms-5 me-5' >
-            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8" , height:"50px"}}>
-                    <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Overview</Link></p>
-                <p className='ps-3 rounded-3 p-3' style={{ backgroundColor: "#0ED7A8", height: "50px" }}><Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Mission</Link></p>
-            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8", height:"50px"}}>
-                    <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Vision</Link></p>
-            <p className='ps-3 rounded-3 p-3' style={{backgroundColor:"#0ED7A8", height:"50px"}}>
-                    <Link style={{ color: "black", textDecoration: "none" }} to="/comingPage">Team</Link></p>
-        </div>
+        <div style={{ backgroundColor: "#1e2d40" }}>
+           
+            <p>
+                BongoDemy is working to prevent cyber-bullying and cyber-crime in Bangladesh. Provide free training and cyber awareness programs for schools, colleges, and organizations to protect themselves from cyber-crime. We also provide cyber security training and services to ensure the valuable assets and data of the organizations are protected and increase skilled manpower in the field of cyber security. We also arrange BongoDemy cyber olympiad.
+                Cyber security is not merely a product that can be purchased; rather, it should be developed from the ground up.
+                BongoDemy has always prioritized new solutions for establishing a safe environment above traditional means. BongoDemy's working technique is always unique, allowing it to maintain security operations in its own unique way.
+
+            </p>
         </div>
     );
 };
