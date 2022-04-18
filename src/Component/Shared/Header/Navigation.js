@@ -44,8 +44,11 @@ const Navigation = () => {
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item " to="about">About bongoDemy</Link></li>
-                                    <li><Link className="dropdown-item " to="#">Another action</Link></li>
-                                    <li><Link className="dropdown-item " to="#">Something else here</Link></li>
+                                    <li><Link className="dropdown-item " to="campaign">Campaign</Link></li>
+                                    <li><Link className="dropdown-item " to="methodology">Methodology</Link></li>
+                                    <li><Link className="dropdown-item " to="standerGuideline">Stander & Guideline</Link></li>
+                                    <li><Link className="dropdown-item " to="ourTeamMember">Our Team Members</Link></li>
+                                    
                                 </ul>
                             </li>
                         </ul>

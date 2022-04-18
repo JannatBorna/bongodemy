@@ -30,6 +30,10 @@ import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform
 import NotFound from './Component/pages/NotFound/NotFound';
 import Emergency from './Component/pages/Emergency';
 import ComingPage from './Component/pages/ComingPage/ComingPage';
+import Campaign from './Component/subComp/Campaign/Campaign';
+import Methodology from './Component/pages/Methodology/Methodology';
+import StanderGuideline from './Component/pages/Stander_Guideline/Stander_Guideline';
+import OurTeamMember from './Component/pages/OurTeamMember/OurTeamMember';
 
 
 
@@ -158,8 +162,20 @@ function App() {
             <Route path="/about">
               <AboutUs />
             </Route>
+            <Route path="/ourTeamMember">
+              <OurTeamMember />
+            </Route>
             <Route path="/comingPage">
               <ComingPage />
+            </Route>
+            <Route path="/standerGuideline">
+              <StanderGuideline />
+            </Route>
+            <Route path="/campaign">
+              <Campaign />
+            </Route>
+            <Route path="/methodology">
+              <Methodology />
             </Route>
 
             <Route path="/complainforms">

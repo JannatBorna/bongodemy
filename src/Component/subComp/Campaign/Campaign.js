@@ -14,7 +14,7 @@ const Campaign = () => {
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 "
             src="https://i.postimg.cc/3w0KXmwQ/2.jpg"
             alt="First slide"
           />
