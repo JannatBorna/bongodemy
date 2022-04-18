@@ -78,21 +78,16 @@ const OurTeamMember = () => {
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
             >
-                {instructors?.map((data) => (
-                    <SwiperSlide className="py-10">
-                        <div className="text-center group overflow-hidden bg-info mb-3 mt-3  rounded-sm">
-                            <div className="relative">
-                                <img
-                                    className="w-full rounded-sm"
-                                    src={data.img}
-                                    alt=""
-                                />
-                                <div className="absolute top-1/4 -translate-x-9  group-hover:translate-x-0 ease-in-out duration-300  left-2 space-y-3">
 
-                                </div>
+                {instructors?.map((data) => (
+                    <SwiperSlide className="">
+                        <div className="card mb-3 mt-3 container shadow" style={{ width: "18rem", backgroundColor:"#1E2D40" }}>
+                            <img src={data.img} className="card-img-top mt-3 shadow-sm" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">{data.name}</h5>
+                                <p className="card-text">{data.profetion}</p>
+
                             </div>
-                            <p>{data.name}</p>
-                            <p>{data.profetion}</p>
                         </div>
                     </SwiperSlide>
                 ))}
