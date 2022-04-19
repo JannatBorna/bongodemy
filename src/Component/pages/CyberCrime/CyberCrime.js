@@ -11,8 +11,8 @@ const CyberCrime = () => {
 
         </div>
         <div class="row my-5">
-            <Cards text="Cyber-crime Resources" follow="#"></Cards>
-            <Cards text="Emergency Helpline" follow="#"></Cards>
+            <Cards text="Cyber-crime Resources" follow="/comingPage"></Cards>
+            <Cards text="Emergency Helpline" follow="/comingPage"></Cards>
         </div>
     </div>
     );

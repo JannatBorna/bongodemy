@@ -4,7 +4,7 @@ import logo from '../../../images/icon/BongoDemy-Logo-Transparent.png'
 
 const Navigation = () => {
 
-    // const { logOut, user } = useAuth();
+   
     
     return (
         <div >

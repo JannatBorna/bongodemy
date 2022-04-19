@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       <div class="row my-5">
         <Cards text="Cyber Security Solution" follow="/comingPage"></Cards>
-        <Cards text="Cyber Security Training" follow="/comingPage"></Cards>
+        <Cards text="Cyber Security Training" follow="/courses"></Cards>
       </div>
 
       <hr />
