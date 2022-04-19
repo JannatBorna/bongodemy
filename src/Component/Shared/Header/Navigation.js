@@ -20,9 +20,9 @@ const Navigation = () => {
                             <li className="nav-item">
                                 <Link className="nav-link text-white" to="/services">Services</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link text-white" to='/resources'>Resources</Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle text-white" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Traning
