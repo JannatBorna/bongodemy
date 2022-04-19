@@ -34,6 +34,7 @@ import Campaign from './Component/subComp/Campaign/Campaign';
 import Methodology from './Component/pages/Methodology/Methodology';
 import StanderGuideline from './Component/pages/Stander_Guideline/Stander_Guideline';
 import OurTeamMember from './Component/pages/OurTeamMember/OurTeamMember';
+// import PrivateRoute from './Component/pages/Contact/PrivateRoute';
 
 
 
@@ -153,9 +154,9 @@ function App() {
             <Route path="/resources">
               <Resources />
             </Route>
-            <Route path="/contact">
+            {/* <PrivateRoute path="/contact">
               <Contact />
-            </Route>
+            </PrivateRoute> */}
             <Route path="/courses">
               <Courses />
             </Route>

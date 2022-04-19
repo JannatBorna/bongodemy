@@ -5,6 +5,10 @@ import login from './images/login.svg'
 import './Register.css'
 import useAuth from '../../../Hooks/useAuth';
 import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+
 //import { FcGoogle } from "react-icons/fc";
 // initializeAuthentication();
 
@@ -14,11 +18,12 @@ import { FcGoogle } from "react-icons/fc";
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
-    const { handleGoogleSignIn, loginUser, user, isLoading, error,logOut } = useAuth();
+    const { handleGoogleSignIn, handleGitSignin, loginUser, user, isLoading, error,  } = useAuth();
 
-   
-    
-    const handleOnchange = e =>{
+    const location = useLocation();
+    const history = useHistory();
+
+    const handleOnchange = e => {
         const field = e.target.type;
         const value = e.target.value;
         const newLoginData = { ...loginData };
@@ -27,15 +32,15 @@ const Login = () => {
     }
     //console.log(loginData.email);
 
-    const refreshPage = ()=>{
+    const refreshPage = () => {
         window.location.reload();
-     }
-    const handleEmailPassLogin = e => {
-        loginUser(loginData.email,loginData.password)
-        e.preventDefault();
-        
     }
-   
+    const handleEmailPassLogin = e => {
+        loginUser(loginData.email, loginData.password,location,history)
+        e.preventDefault();
+
+    }
+
     return (
         <div>
             <div className='bg-col'>
@@ -50,7 +55,7 @@ const Login = () => {
                                             Email Address
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control  onChange={handleOnchange} id='form-color' type="email" className="bg-white"placeholder="name@example.com" />
+                                    <Form.Control onChange={handleOnchange} id='form-color' type="email" placeholder="name@example.com" />
                                 </Form.Group>
                                 <Form.Group className="mb-3 bg-white" >
                                     <Form.Label>
@@ -60,22 +65,26 @@ const Login = () => {
                                     </Form.Label>
                                     <Form.Control onChange={handleOnchange} id='form-color'className='bg-white ' type="password" />
                                 </Form.Group>
-                                <div className="text-danger my-2 " style={{ margin: '5px', backgroundColor: 'white', textAlign: 'center' }}>{error}</div>
 
-                                <Button  id='btn-color' type="submit">
+                                <Button id='btn-color' type="submit">
                                     Login
                                 </Button>
-                                 <Button onClick={refreshPage} id='btn-color' style={{ margin: '5px' }}>Refresh</Button>
+                                <Button onClick={refreshPage} id='btn-color' style={{ margin: '5px' }}>Refresh</Button>
                             </Form>
                             {isLoading && <div class="spinner-border spin-col" role="status">
                                 <span class="sr-only"></span>
                             </div>}
-                           
-                            <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px' , width:'200px' }}> <span> <FcGoogle/> </span> Google Sign in </Button>
+                            {error && <div className="alert alert-danger my-5" role="alert">
+                                {error}
+                            </div>}
+                            <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px', width: '200px' }}> <span> <FcGoogle /> </span> Google Sign in </Button>
+                            <Button id='btn-color' className='my-4' onClick={handleGitSignin} style={{ margin: '10px', width: '200px' }}> <span> <FaGithub/> </span> Github Sign in </Button>
+
                             {user?.email && <div className="alert alert-success" role="alert">
-                            Login Successful !!!
-                        </div>}
-                        {user?.email && <Button id='btn-color' onClick={logOut} style={{ margin: '5px'  }}>Logout</Button>}
+                                Login Successful !!!
+                            </div>}
+                            {user?.email && <Button id='btn-color' > <Link className='home-text' to="/home">Go to Home</Link> </Button>}
+
                         </div>
                         <div className='col-md-5'>
                             <img src={login} width="80%" alt="" />
@@ -83,7 +92,13 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            <h6 className='text-white'>New User? <Link to="/register">Please register!</Link>  </h6>
+            {
+                user?.email ?
+                    <></>
+                    :
+                    <h6 className='text-white mb-5'>New User? <Link to="/register">Please register!</Link>  </h6>
+
+            }
         </div>
     );
 };

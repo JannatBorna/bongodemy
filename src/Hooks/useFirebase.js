@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getAuth, signInWithPopup, signInWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, signInWithRedirect, signInWithEmailAndPassword, GoogleAuthProvider, GithubAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
@@ -12,17 +12,36 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const googleProvider = new GoogleAuthProvider();
+    const gitprovider = new GithubAuthProvider();
+
+    //github sign in
+    const handleGitSignin = () => {
+        signInWithPopup(auth, gitprovider)
+            .then(result => {
+                // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+                // const credential = GithubAuthProvider.credentialFromResult(result);
+                // const token = credential.accessToken;
+ 
+                // The signed-in user info.
+                const user = result.user;
+            })
+    }
+
+   
 
     const handleGoogleSignIn = (location, history) => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
+                const destination = location?.state?.from || '/';
+                history.replace(destination);
                 const user = result.user;
-               // console.log(user);
+
+                // console.log(user);
                 setError('');
             })
     }
     //**********************************/
-    const registerUser = (email, password,name) => {
+    const registerUser = (email, password,location,history) => {
         if (password.length < 6) {
             setError('Password Must be 6 character long');
             return;
@@ -36,10 +55,13 @@ const useFirebase = () => {
             .then(result => {
                 const newUser = { email, password };
                 setUser(newUser);
+                
                 const user = result.user;
                 //console.log(newUser);
 
                 setError('');
+                //const destination = location?.state?.from || '/';
+                
             })
             .catch(error => {
                 setError(error.message);
@@ -47,12 +69,12 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    const loginUser = (email, password) => {
+    const loginUser = (email, password,location,history) => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user;
-                 console.log(user);
+                const destination = location?.state?.from || '/';
+                history.replace(destination);
                 setError('');
             })
             .catch(error => {
@@ -80,7 +102,7 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
             // Sign-out successful.
-            
+
         }).catch((error) => {
             // An error happened.
         })
@@ -90,6 +112,7 @@ const useFirebase = () => {
     return {
         user,
         handleGoogleSignIn,
+        handleGitSignin,
         logOut,
         registerUser,
         loginUser,

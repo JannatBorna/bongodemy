@@ -7,7 +7,9 @@
     justify-content: center;
    
 }
-
+#boxx-text{
+    color:#1E2D40;
+}
 .card-col{
     margin-top: 40px;
     margin-bottom: 20px;
@@ -35,11 +37,15 @@
     background-color: #1E2D40;
 }
 .text-area-size{
-    height: 95px;
+    height: 100px;
     resize: none;
 }
-#icons-pad{
+#icon-hover{
     margin:5px;
+}
+#icon-hover:hover{
+    transform: scale(1.5);
+    transition-duration: 1s;
 }
 /*map css*/
 .mapouter{position:relative;text-align:right;height:118px;width:300px;

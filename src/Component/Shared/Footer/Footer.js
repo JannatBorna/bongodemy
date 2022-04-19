@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Footer.css"
+import { BsFacebook } from 'react-icons/bs';
 
 const Footer = () => {
     return (
@@ -39,26 +40,26 @@ const Footer = () => {
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 mb-50">
                                 <div class="footer-widget">
-                                    <div class="footer-logo">
-
+                                    
                                         <h3>BongoDemy</h3>
-
-                                    </div>
+                                  
                                     <div class="footer-text">
                                         <p className='fw-bold'>BongoDemy is working to prevent cyber-bullying and cyber-crime in Bangladesh. Provide free training and cyber awareness programs for students. We also provide cyber security training and services to build skilled manpower in cyber security field.</p>
                                     </div>
                                     <div class="footer-social-icon">
-                                        <span>Follow us</span>
-                                        <Link to="#"><i class="fab fa-facebook-f facebook-bg"></i></Link>
-                                        <Link to="#"><i class="fab fa-twitter twitter-bg"></i></Link>
-                                        <Link to="#"><i class="fab fa-google-plus-g google-bg"></i></Link>
+                                        <span style={{color:"#373636"}} className='fw-bold'>Follow us</span>
+                                       
+                                        <a href="https://web.facebook.com/bongodemy?_rdc=1&_rdr"><BsFacebook/></a>
+                                        <a href="https://www.linkedin.com/company/bongodemy/"><i class="fab fa-linkedin linkedin-bg"></i></a>
+
+                                        <a href="https://www.instagram.com/bongodemy/?hl=en"><i class="fab fa-instagram instagram-bg"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                                 <div class="footer-widget">
                                     <div class="footer-widget-heading">
-                                        <h3>Menu</h3>
+                                        <h3 style={{color:"#373636"}} className='fw-bold'>Menu</h3>
                                     </div>
                                     <ul>
                                         <li><Link to="/">Home</Link></li>
@@ -74,7 +75,7 @@ const Footer = () => {
                             <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                                 <div class="footer-widget">
                                     <div class="footer-widget-heading">
-                                        <h3>Subscribe</h3>
+                                        <h3 style={{color:"#373636"}} className='fw-bold'>Subscribe</h3>
                                     </div>
                                     <div class="footer-text mb-25">
                                         <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
