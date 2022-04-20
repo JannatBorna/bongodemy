@@ -26,10 +26,10 @@ const Contact = () => {
                             <Card.Text>
                                 <h6 id='boxx-text'>Contact with  us if you need any kind of help about cyber security or harassment.You can directly contact us or describe your problem in this form. We will contact you as soon as possible.</h6>
                             </Card.Text>
-                            <Form >
+                            <Form  style={{backgroundColor:"#1E2D40"}}>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
-                                        <h5  id='boxx-text' >
+                                        <h5 className='text-white' id='boxx-text' >
                                             Name
                                         </h5>
                                     </Form.Label>
