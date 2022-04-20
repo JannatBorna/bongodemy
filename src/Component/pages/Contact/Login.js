@@ -18,7 +18,7 @@ import { useHistory } from 'react-router-dom';
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
-    const { handleGoogleSignIn,handleredirect, handleGitSignin, loginUser, user, isLoading, error, logOut } = useAuth();
+    const { handleGoogleSignIn, handleGitSignin, loginUser, user, isLoading, error,  } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -44,26 +44,26 @@ const Login = () => {
     return (
         <div>
             <div className='bg-col'>
-                <h3 className='text-white'>Login</h3>
+                <h3 className='text-white '>Login</h3>
                 <div className='bg-color'>
                     <div className='row'>
                         <div className='col-md-5 marge-btm'>
                             <Form onSubmit={handleEmailPassLogin} id='form-bgm'>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>
-                                        <h6>
+                                <Form.Group className="mb-3 bg-white">
+                                    <Form.Label className='mb-2'>
+                                        <h6 className=" bg-white">
                                             Email Address
                                         </h6>
                                     </Form.Label>
                                     <Form.Control onChange={handleOnchange} id='form-color' type="email" placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" >
+                                <Form.Group className="mb-3 bg-white" >
                                     <Form.Label>
-                                        <h6>
+                                        <h6 className="mt-2 mb-2 bg-white">
                                             Password
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control onChange={handleOnchange} id='form-color' type="password" />
+                                    <Form.Control onChange={handleOnchange} id='form-color'className='bg-white ' type="password" />
                                 </Form.Group>
 
                                 <Button id='btn-color' type="submit">
@@ -94,7 +94,7 @@ const Login = () => {
             </div>
             {
                 user?.email ?
-                    <h6></h6>
+                    <></>
                     :
                     <h6 className='text-white mb-5'>New User? <Link to="/register">Please register!</Link>  </h6>
 

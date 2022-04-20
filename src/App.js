@@ -13,7 +13,6 @@ import Services from './Component/pages/Services/Services';
 import Training from './Component/pages/Training/Training';
 import Resources from './Component/pages/Resources/Resources';
 import AboutUs from './Component/pages/AboutUs/AboutUs';
-// import Login from './Component/pages/Contact/Login';
 import Contact from './Component/pages/Contact/Contact';
 import HackingLab from './Component/Shared/Header/HackingLab';
 
@@ -28,6 +27,17 @@ import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
+<<<<<<< HEAD
+=======
+import NotFound from './Component/pages/NotFound/NotFound';
+import Emergency from './Component/pages/Emergency';
+import ComingPage from './Component/pages/ComingPage/ComingPage';
+import Campaign from './Component/subComp/Campaign/Campaign';
+import Methodology from './Component/pages/Methodology/Methodology';
+import StanderGuideline from './Component/pages/Stander_Guideline/Stander_Guideline';
+import OurTeamMember from './Component/pages/OurTeamMember/OurTeamMember';
+// import PrivateRoute from './Component/pages/Contact/PrivateRoute';
+>>>>>>> 2847e8bf927f0cbd4960e3ee5288abbaedc88f3b
 
 
 
@@ -125,6 +135,7 @@ function App() {
         <Router>
           <Navigation></Navigation>
           <Switch>
+            
             <Route path="/home">
               <Home />
             </Route>
@@ -136,6 +147,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services />
+            </Route>
+            <Route path="/emergency">
+              <Emergency />
             </Route>
             <Route path="/training">
               <Training />
@@ -151,6 +165,21 @@ function App() {
             </Route>
             <Route path="/about">
               <AboutUs />
+            </Route>
+            <Route path="/ourTeamMember">
+              <OurTeamMember />
+            </Route>
+            <Route path="/comingPage">
+              <ComingPage />
+            </Route>
+            <Route path="/standerGuideline">
+              <StanderGuideline />
+            </Route>
+            <Route path="/campaign">
+              <Campaign />
+            </Route>
+            <Route path="/methodology">
+              <Methodology />
             </Route>
 
             <Route path="/complainforms">
@@ -184,9 +213,15 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+
           </Switch>
+          <Footer></Footer>
         </Router>
-        <Footer></Footer>
+        
       </AuthProvider>
     </div>
   );
