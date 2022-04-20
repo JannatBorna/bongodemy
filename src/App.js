@@ -24,14 +24,10 @@ import Courses from './Component/pages/Courses/Courses';
 import Login from './Component/pages/Contact/Login';
 import Register from './Component/pages/Contact/Register';
 import AuthProvider from './Contexts/AuthProvider';
-<<<<<<< HEAD
-import PrivateRoute from './Component/pages/Contact/PrivateRoute';
-=======
 import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
->>>>>>> a89987ad17f0a0a87449fe9f31beaede556bbb98
 
 
 
@@ -147,9 +143,9 @@ function App() {
             <Route path="/resources">
               <Resources />
             </Route>
-            <PrivateRoute path="/contact">
+            {/* <PrivateRoute path="/contact">
               <Contact />
-            </PrivateRoute>
+            </PrivateRoute> */}
             <Route path="/courses">
               <Courses />
             </Route>
