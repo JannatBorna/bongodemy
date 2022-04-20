@@ -1,6 +1,4 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import img1 from "../../image/img1.png";
 import img2 from "../../image/img1.png";
 import img3 from "../../image/img1.png";
@@ -8,11 +6,11 @@ import img4 from "../../image/img1.png";
 import img5 from "../../image/img1.png";
 import img6 from "../../image/img1.png";
 // Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import { Autoplay, Pagination } from "swiper";
+
+
 const OurTeamMember = () => {
     const instructors = [
         {
