@@ -11,8 +11,8 @@ const Navigation = () => {
             <nav style={{ backgroundColor: "#1E2D40" }} className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                 <img  width="200px" height="50px" src={logo} alt="" className='header_logo pe-3' />
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon "></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
