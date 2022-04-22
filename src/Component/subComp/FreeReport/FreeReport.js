@@ -3,7 +3,7 @@ import './FreeReport.css';
 
 const FreeReport = () => {
   return (
-    <div className="container m-5">
+    <div className="container ">
       <div className="row">
         <div className="col-md-6">
           <p className="fs-2 my-4 text-paste text-left">

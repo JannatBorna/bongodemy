@@ -14,7 +14,7 @@ const Services = () => {
     // const [show3, setShow3] = useState(false)
 
     return (
-        <div className="container">
+        <div className="container service ">
             <div className="row">
                 <h1 className='m-2'>Services</h1>
                 <Lottie
@@ -24,10 +24,10 @@ const Services = () => {
                     play
                     style={{ width: "80vw", background: "rgba(0, 0, 0, 0)" }}
                 />
-                <div className="d-flex flex-wrap justify-content-between  m-5">
+                <div className="d-flex flex-wrap justify-content-md-between justify-content-center  m-5">
 
                     {/*--------------------- A Service Holder Card Starts  ---------------------*/}
-                    <div className="service-holder text-center mx-3 mb-2 p-3 col-md-5">
+                    <div className="service-holder text-center  mb-5 p-3 col-md-5">
                         <Lottie
                             className="mx-auto"
                             loop
@@ -39,7 +39,7 @@ const Services = () => {
                         <p className='text-white'>Provide All kainds of website</p>
 
 
-                    <button type="button" style={{backgroundColor:"#1E2D40"}} class="border-0 text-white p-1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" style={{ backgroundColor: "#1E2D40" }} class="border-0 text-white p-1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             See More
                         </button>
 
@@ -125,7 +125,7 @@ const Services = () => {
                     </div>
 
                     {/*--------------------- A Service Holder Card Starts  ---------------------*/}
-                    <div className="mb-2 service-holder text-center mx-3  col-md-5">
+                    <div className="mb-5 service-holder text-center   col-md-5">
                         <Lottie
                             className="mx-auto"
                             loop
@@ -134,10 +134,10 @@ const Services = () => {
                             style={{ width: 250, height: 200, background: "rgba(0, 0, 0, 0)" }}
                         />
                         <h5 className="">Secured Software Development</h5>
-                        <p className='text-white'>Weare Secured Software Development</p>
+                        <p className='text-white p-1'>Weare Secured Software Development</p>
 
 
-                        <button type="button" style={{backgroundColor:"#1E2D40"}}  class="text-white border-0 p-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <button type="button" style={{ backgroundColor: "#1E2D40" }} class="text-white mb-3 border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             See More
                         </button>
 
@@ -190,7 +190,7 @@ const Services = () => {
 
 
                     {/*--------------------- 3rd Service Holder Card Starts  ---------------------*/}
-                    <div className="service-holder text-center mx-3 my-5 p-3 col-md-5">
+                    <div className="service-holder text-center    p-3 col-md-5">
                         <Lottie
                             className="mx-auto"
                             loop
@@ -199,10 +199,10 @@ const Services = () => {
                             style={{ width: 250, height: 200, background: "rgba(0, 0, 0, 0)" }}
                         />
                         <h5 className="">Cyber Security Services</h5>
-                        <p className="mb-5">We are provide Cyber security services
+                        <p className="">We are provide Cyber security services
                         </p>
 
-                        <button type="button" style={{backgroundColor:"#1E2D40"}}  class="text-white p-1  border-0" data-bs-toggle="modal" data-bs-target="#exampleModalll">
+                        <button type="button" style={{ backgroundColor: "#1E2D40" }} class="text-white p-1  border-0" data-bs-toggle="modal" data-bs-target="#exampleModalll">
                             See More
                         </button>
 
@@ -270,7 +270,7 @@ const Services = () => {
 
 
                     {/*--------------------- 4th Service Holder Card Starts  ---------------------*/}
-                    <div className="service-holder text-center mx-3 my-5 p-3 col-md-5">
+                    <div className="service-holder text-center mt-5 mt-md-0  p-3 col-md-5">
                         <Lottie
                             className="mx-auto"
                             loop
@@ -279,13 +279,13 @@ const Services = () => {
                             style={{ width: 250, height: 200, background: "rgba(0, 0, 0, 0)" }}
                         />
                         <h5 className="mt-2">Mobile Application</h5>
-                        <p className="mb-5">We are provide all Mobile Application
+                        <p className="">We are provide all Mobile Application
                         </p>
 
 
 
 
-                        <button type="button" style={{backgroundColor:"#1E2D40"}}  class="p-1 text-white border-0" data-bs-toggle="modal" data-bs-target="#exampleModall">
+                        <button type="button" style={{ backgroundColor: "#1E2D40" }} class="p-1 text-white border-0" data-bs-toggle="modal" data-bs-target="#exampleModall">
                             See More
                         </button>
 
@@ -328,6 +328,7 @@ const Services = () => {
 
                     {/*--------------------- Ending Div  ---------------------*/}
                 </div>
+               
             </div>
         </div>
     );
