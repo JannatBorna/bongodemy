@@ -129,8 +129,9 @@ function App() {
         }}
       />  
       <AuthProvider>
+
         <Router>
-          <Navigation></Navigation>
+        <Navigation></Navigation>
           <Switch>
             
             <Route path="/home">
@@ -220,6 +221,7 @@ function App() {
         </Router>
         
       </AuthProvider>
+
     </div>
   );
 }
