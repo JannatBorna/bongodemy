@@ -44,26 +44,26 @@ const Login = () => {
     return (
         <div>
             <div className='bg-col'>
-                <h3 className='text-white '>Login</h3>
+                <h3 className='text-white' style={{ margin: '25px',textAlign:'center', }}>Login</h3>
                 <div className='bg-color'>
                     <div className='row'>
                         <div className='col-md-5 marge-btm'>
                             <Form onSubmit={handleEmailPassLogin} id='form-bgm'>
-                                <Form.Group className="mb-3 bg-white">
+                                <Form.Group className="mb-3 ">
                                     <Form.Label className='mb-2'>
-                                        <h6 className=" bg-white">
+                                        <h6 className=" ">
                                             Email Address
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control onChange={handleOnchange} id='form-color' type="email" placeholder="name@example.com" />
+                                    <Form.Control onChange={handleOnchange} id='form-color' className='bg-dark' type="email" placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3 bg-white" >
+                                <Form.Group className="mb-3" >
                                     <Form.Label>
-                                        <h6 className="mt-2 mb-2 bg-white">
+                                        <h6 className="">
                                             Password
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control onChange={handleOnchange} id='form-color'className='bg-white ' type="password" />
+                                    <Form.Control onChange={handleOnchange} id='form-color'className='bg-dark' type="password" placeholder='enter your password' />
                                 </Form.Group>
 
                                 <Button id='btn-color' type="submit">
@@ -93,10 +93,7 @@ const Login = () => {
                 </div>
             </div>
             {
-                user?.email ?
-                    <></>
-                    :
-                    <h6 className='text-white mb-5'>New User? <Link to="/register">Please register!</Link>  </h6>
+ <h5 className='text-white' style={{ margin: '25px',textAlign:'center', }} > New user? please <Link to="/register">register</Link></h5>
 
             }
         </div>
