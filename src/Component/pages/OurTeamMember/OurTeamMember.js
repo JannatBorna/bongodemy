@@ -15,7 +15,7 @@ const OurTeamMember = () => {
     const instructors = [
         {
             img: img1,
-            name: "Fateh Ahmod",
+            name: "karim Ahmed",
             profetion: "Web Developer"
         },
         {

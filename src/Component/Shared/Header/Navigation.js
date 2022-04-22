@@ -11,8 +11,8 @@ const Navigation = () => {
             <nav style={{ backgroundColor: "#1E2D40" }} className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                 <img  width="200px" height="50px" src={logo} alt="" className='header_logo pe-3' />
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon "></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
@@ -33,8 +33,8 @@ const Navigation = () => {
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item " to="/freeTraining">Free Training</Link></li>
                                     <li><Link className="dropdown-item " to="/courses">Courses</Link></li>
-                                    <li><Link className="dropdown-item " to="/hackingLab">Hacking Lab</Link></li>
-                                    <li><Link className="dropdown-item " to="/battleGround">Battle Ground</Link></li>
+                                    <li><Link className="dropdown-item " to="/comingPage">Hacking Lab</Link></li>
+                                    <li><Link className="dropdown-item " to="//comingPage">Battle Ground</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">

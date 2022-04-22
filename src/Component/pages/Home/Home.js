@@ -21,7 +21,7 @@ const Home = () => {
       <hr />
       <hr />
       <h1>Our Achievements</h1>
-      <div className="wrapper">
+      <div className="wrapper me-3">
         <Counter dvalue={
           <span>
             <CountUp end={100} redraw={true}>

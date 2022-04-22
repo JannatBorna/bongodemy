@@ -8,21 +8,21 @@ const Courses = () => {
                     <h2>Introduction to Cyber Security course</h2>
                     <h6>The demand for a Cyber Security Specialist is growing day by day. There are currently over a million Cyber Security job openings global and demand is greatly outpacing supply which means more opportunity, job security and higher pay for you! By the end of the course, you will not only learn about cyber security but also you are on the way to becoming a cyber security specialist.</h6>
                 </div>
-                <div className='px-3 course-card'>
-                    <div className="card" >
-                        <div className="card-body">
-                            <h3 className="card-title">TK 2000</h3>
-                            <h6 className="card-subtitle mb-2 text-muted"><button type="button" className="btn btn-outline-secondary border border-dark">Register</button>
-                            </h6>
-                            <h6 className="card-text">includes</h6>
-                            <li>Begginner</li>
-                            <li>
-                                Live session</li>
-                            <li>0 Lessons</li>
-                            <li>Full lifetime access</li>
-                            <li>Access on mobile and tv</li>
-                            <li>Certificate after completion</li>
-                            <li>24 hours Refund Policy</li>
+                <div className='px-3 course-card shadow' style={{ backgroundColor: "#1E2D40" }} >
+                    <div className=" " >
+                        <div style={{ backgroundColor: "#1E2D40" }} className="card-body bordar-0">
+                            <h3 className="card-title text-white">TK 2000</h3>
+                            {/* <h6 className="card-subtitle mb-2 text-muted">
+                                <button type="button" className="btn btn-outline-secondary border border-dark text-white">Register</button>
+                            </h6> */}
+                            <h6 className="card-text text-white">includes</h6>
+                            <li className='text-white'>Begginner</li>
+                            <li className='text-white'>Live session</li>
+                            <li className='text-white'>0 Lessons</li>
+                            <li className='text-white'>Full lifetime access</li>
+                            <li className='text-white'>Access on mobile and tv</li>
+                            <li className='text-white'>Certificate after completion</li>
+                            <li className='text-white'>24 hours Refund Policy</li>
 
 
                         </div>
@@ -35,26 +35,26 @@ const Courses = () => {
 
 
 
-            <div class="card learn py-3" >
-                <h5 class="card-title">What you will learn?</h5>
+            <div class="card learn py-3 shadow" style={{ backgroundColor: "#1E2D40" }} >
+                <h5 class="card-title text-white">What you will learn?</h5>
                 <div class="container align-items-start">
-                    <li>Secure Lab Setup and Essential Linux system commands.</li>
-                    <li >Website penetration testing.</li>
-                    <li>System hacking using Metasploit</li>
-                    <li>Buffer Overflow.</li>
-                    <li>Cryptography.</li>
-                    <li>Footprinting & Information Gathering.</li>
+                    <li className='text-white'>Secure Lab Setup and Essential Linux system commands.</li>
+                    <li className='text-white'>Website penetration testing.</li>
+                    <li className='text-white'>System hacking using Metasploit</li>
+                    <li className='text-white'>Buffer Overflow.</li>
+                    <li className='text-white'>Cryptography.</li>
+                    <li className='text-white'>Footprinting & Information Gathering.</li>
 
                 </div>
 
             </div>
-            <div className='curriculum my-5 py-3 '>
+            <div style={{ backgroundColor: "#1E2D40" }}  className='curriculum my-5 py-3 '>
                 <div class="container">
                     <div class="row justify-content-start">
                         <div class="col-4">
-                            <h6>curriculum for the course</h6>
-                            <h5>Requirments</h5>
-                            <h6 className=''>
+                            <h6 className='text-white'>curriculum for the course</h6>
+                            <h5 className='text-white'>Requirments</h5>
+                            <h6 className='text-white'>
                                 <li>Linux fundamentals</li>
                                 <li>Essential networking terms</li>
                                 <li>Essential hacking terms</li>
@@ -67,21 +67,21 @@ const Courses = () => {
 
                                 <div class="col-8">
                                     <table class="table  table-bordered container">
-                                        <thead>
-                                            <tr>
+                                        <thead className='text-white'>
+                                            <tr className='text-white'>
 
                                                 <th scope="col">Week</th>
                                                 <th scope="col">Day</th>
                                                 <th scope="col">Topic</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
+                                        <tbody className='text-white'>
+                                            <tr className='text-white'>
 
                                                 <td>Week 1</td>
                                                 <td>Day 1</td>
 
-                                                <td>
+                                                <td className='text-white'>
                                                     <li>Introduction to the course</li>
                                                     <li> Introduction to cyber security</li>
 
@@ -95,17 +95,17 @@ const Courses = () => {
 
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 2</td>
                                                 <td><li>Linux fundamentals.</li>
 
                                                     <li>Linux Basic Commands.</li> </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 3</td>
-                                                <td>
+                                                <td className='text-white'>
                                                     <li> Essential networking terms.  </li>
 
                                                     <li> Essential hacking terms.  </li>
@@ -119,7 +119,7 @@ const Courses = () => {
 
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
 
                                                 <td>Week 2</td>
                                                 <td>Day 4</td>
@@ -128,14 +128,14 @@ const Courses = () => {
                                                     <li>Nmap Basic to Advance.</li>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 5</td>
                                                 <td>Test 1
 
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 6</td>
                                                 <td><li> HTTP request</li>
@@ -146,7 +146,7 @@ const Courses = () => {
 
                                                     <li> Editing packets in Burp Suite. </li>                             </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
 
                                                 <td>Week 3</td>
                                                 <td>Day 7</td>
@@ -157,7 +157,7 @@ const Courses = () => {
                                                     <li> Broken Authentication vulnerability</li>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 8</td>
                                                 <td><li>Sensitive Data Exposure</li>
@@ -166,7 +166,7 @@ const Courses = () => {
 
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 9</td>
                                                 <td><li>Whatweb and Dirb </li>
@@ -177,12 +177,12 @@ const Courses = () => {
 
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
 
                                                 <td>Week 4</td>
                                                 <td>Day 10</td>
 
-                                                <td>
+                                                <td className='text-white'>
                                                     <li> Anonymity</li>
 
                                                     <li> Tor Network</li>
@@ -192,12 +192,12 @@ const Courses = () => {
                                                     <li> Broken Authentication vulnerability</li>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
 
                                                 <td>Week 5</td>
                                                 <td>Day 11</td>
 
-                                                <td>
+                                                <td className='text-white'>
                                                     <li>Injection attacks</li>
 
                                                     <li> Simple command injection </li>
@@ -208,7 +208,7 @@ const Courses = () => {
                                                     <li> vulnerability</li>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='text-white'>
                                                 <td></td>
                                                 <td>Day 12</td>
                                                 <td>Test 2
@@ -225,7 +225,7 @@ const Courses = () => {
                                 </div>
                                 <div className="container">
                                     <div className="row justify-content-start">
-                                        <div className='col-4'>
+                                        <div className='col-4 text-white'>
                                             <h2>student feedback</h2>
                                             <h1>0</h1>
                                             <h6>average rating</h6>
