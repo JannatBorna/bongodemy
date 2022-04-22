@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Contact.css'
 const Contact = () => {
     const handleClickfb = () => {
@@ -15,6 +16,7 @@ const Contact = () => {
         <div className='bg-col'>
             <div className='row'>
                 <div className='col-md-5'>
+                    
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
                             <Card.Title>
@@ -25,31 +27,34 @@ const Contact = () => {
                             <Card.Text>
                                 <h6 id='boxx-text'>Contact with  us if you need any kind of help about cyber security or harassment.You can directly contact us or describe your problem in this form. We will contact you as soon as possible.</h6>
                             </Card.Text>
-                            <Form >
+                            <Form className='form-bg'>
+                                
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
-                                        <h5 id='boxx-text'>
+                                        <h5  id='boxx-text' >
                                             Name
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control id='form-col' type="name" placeholder="Enter your name" />
+                                    <Form.Control  className= 'bg-dark' type="name" placeholder="Enter your name" />
+                                    
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Group className="mb-3 rounded" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
                                         <h5 id='boxx-text'>
                                             Email Address
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control id='form-col' type="email" placeholder="name@example.com" />
+                                    <Form.Control className="bg-dark"  type="email" placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Group className="mb-3 mt-3 rounded" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>
                                         <h5 id='boxx-text'>
                                             Describe Your Problem
                                         </h5>
                                     </Form.Label>
 
-                                    <Form.Control className='text-area-size' id='form-col' as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
+                                    <Form.Control className='bg-dark text-area-size' id="text-box-col"  as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
+
                                 </Form.Group>
                                 <Button id='btn-col' type="submit">
                                     Submit
@@ -80,7 +85,7 @@ const Contact = () => {
 
                                 </h6>
 
-                                <div className='mapouter'><div className='gmap_canvas'><iframe width="463" height="102" id="gmap_canvas" src="https://maps.google.com/maps?q=East%20Barandi%20Para,jessore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><a href="https://www.embedgooglemap.net">responsive google map</a></div></div>
+                                <div className='mapouter'><div className='gmap_canvas'><iframe width="463" height="102" id="gmap_canvas" src="https://maps.google.com/maps?q=East%20Barandi%20Para,jessore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><Link href="https://123movies-to.org"></Link><a href="https://www.embedgooglemap.net">responsive google map</a></div></div>
 
                             </Card.Text>
                             <Card.Text>

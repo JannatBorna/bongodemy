@@ -18,13 +18,7 @@
 }
 #cardcolor{
     background-color:#0ED7A8 ;
-    color:#1E2D40;
-}
-
-#form-col{
-   
-    background-color: #1E2D40;
-    color: aliceblue;
+    
 }
 .banner{
     display: flex;
@@ -40,6 +34,9 @@
     height: 100px;
     resize: none;
 }
+
+
+
 #icon-hover{
     margin:5px;
 }
