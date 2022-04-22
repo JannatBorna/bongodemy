@@ -51,7 +51,7 @@ const Register = () => {
     //console.log(user);
     return (
         <div>
-            <h3 className='text-white' style={{ margin: '25px' }} >Register</h3>
+            <h3 className='text-white' style={{ margin: '25px',textAlign:'center', }} >Register</h3>
             <div className='bg-color'>
                 <div className='row'>
                     <div className='col-md-5 marge-btm'>
@@ -62,7 +62,7 @@ const Register = () => {
                                         Name
                                     </h6>
                                 </Form.Label>
-                                <Form.Control id='form-color' type="name" placeholder="Enter your name" required />
+                                <Form.Control id='form-color' type="name" className='bg-dark' placeholder="Enter your name" required />
                             </Form.Group>
                             <Form.Group className="mb-3">
                                 <Form.Label>
@@ -70,7 +70,7 @@ const Register = () => {
                                         Email Address
                                     </h6>
                                 </Form.Label>
-                                <Form.Control id='form-color' onBlur={handleEmailChange} className='form-col' type="email" placeholder="name@example.com" required />
+                                <Form.Control id='form-color' onBlur={handleEmailChange} className='bg-dark' type="email" placeholder="name@example.com" required />
                             </Form.Group>
                             <Form.Group className="mb-3" >
                                 <Form.Label>
@@ -78,7 +78,7 @@ const Register = () => {
                                         Type Password
                                     </h6>
                                 </Form.Label>
-                                <Form.Control id='form-color' onBlur={handlePasswordChange} className='form-col' type="password" required />
+                                <Form.Control id='form-color' onBlur={handlePasswordChange} style={{color:'red'}} className='bg-dark' type="password" required placeholder='type password' />
                             </Form.Group>
                             {/* <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>
@@ -109,12 +109,15 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            {
+            {/* {
               user?.email?
               <h6></h6>
                 :
-            <h6 className='text-white mb-5'>Already registered? <Link to="/login">Please Login</Link></h6>
-            }
+            <h6 className='text-white mb-5' style={{textalign:'center'}} >Already registered? <Link to="/login">Please Login</Link></h6>
+            
+            } */}
+                        <h5 className='text-white' style={{ margin: '25px',textAlign:'center', }} > Already Register? please <Link to="/login">login</Link></h5>
+
         </div>
 
     );
