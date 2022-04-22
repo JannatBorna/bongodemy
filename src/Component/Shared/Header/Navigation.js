@@ -34,7 +34,7 @@ const Navigation = () => {
                                     <li><Link className="dropdown-item " to="/freeTraining">Free Training</Link></li>
                                     <li><Link className="dropdown-item " to="/courses">Courses</Link></li>
                                     <li><Link className="dropdown-item " to="/comingPage">Hacking Lab</Link></li>
-                                    <li><Link className="dropdown-item " to="//comingPage">Battle Ground</Link></li>
+                                    <li><Link className="dropdown-item " to="/comingPage">Battle Ground</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
