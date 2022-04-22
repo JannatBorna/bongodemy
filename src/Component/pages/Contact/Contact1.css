@@ -1,4 +1,4 @@
-.bg-col{
+ /* .bg-col{
     background-color:#1E2D40;
     padding: 20px;
 }
@@ -16,7 +16,7 @@
 }
 #cardcolor{
     background-color:#0ED7A8 ;
-    color:#1E2D40;
+    color:#00ca94;
 }
 
 #form-col{
@@ -42,6 +42,6 @@
     margin:5px;
 }
 /*map css*/
-.mapouter{position:relative;text-align:right;height:118px;width:300px;
+/* .mapouter{position:relative;text-align:right;height:118px;width:300px;
 }
-.gmap_canvas {overflow:hidden;background:none!important;height:118px;width:300px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:118px;width:300px;}  */

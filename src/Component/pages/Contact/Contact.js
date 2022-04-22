@@ -16,6 +16,7 @@ const Contact = () => {
         <div className='bg-col'>
             <div className='row'>
                 <div className='col-md-5'>
+                    
                     <Card className='card-col' id='cardcolor'>
                         <Card.Body>
                             <Card.Title>
@@ -26,31 +27,34 @@ const Contact = () => {
                             <Card.Text>
                                 <h6 id='boxx-text'>Contact with  us if you need any kind of help about cyber security or harassment.You can directly contact us or describe your problem in this form. We will contact you as soon as possible.</h6>
                             </Card.Text>
-                            <Form  style={{backgroundColor:"#1E2D40"}}>
+                            <Form className='form-bg'>
+                                
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
-                                        <h5 className='text-white' id='boxx-text' >
+                                        <h5  id='boxx-text' >
                                             Name
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control  className='bg-white' id='form-col' type="name" placeholder="Enter your name" />
+                                    <Form.Control  className= 'bg-dark' type="name" placeholder="Enter your name" />
+                                    
                                 </Form.Group>
-                                <Form.Group className="mb-3 bg-white rounded" controlId="exampleForm.ControlInput1">
+                                <Form.Group className="mb-3 rounded" controlId="exampleForm.ControlInput1">
                                     <Form.Label>
                                         <h5 id='boxx-text'>
                                             Email Address
                                         </h5>
                                     </Form.Label>
-                                    <Form.Control className="mb-3 bg-white mt-3 roundrd" id='form-col' type="email" placeholder="name@example.com" />
+                                    <Form.Control className="bg-dark"  type="email" placeholder="name@example.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3 bg-white mt-3 rounded" controlId="exampleForm.ControlTextarea1">
+                                <Form.Group className="mb-3 mt-3 rounded" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>
                                         <h5 id='boxx-text'>
                                             Describe Your Problem
                                         </h5>
                                     </Form.Label>
 
-                                    <Form.Control className='text-area-size bg-white' id='form-col' as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
+                                    <Form.Control className='bg-dark text-area-size' id="text-box-col"  as='textarea' rows={3} placeholder="Your name and problem should hidden..." />
+
                                 </Form.Group>
                                 <Button id='btn-col' type="submit">
                                     Submit
