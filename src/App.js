@@ -27,8 +27,6 @@ import Particles from "react-tsparticles";
 import GetConsultation from './Component/pages/GetConsultation/GetConsultation';
 import Complainforms from './Component/pages/ComplainForm/Complainforms';
 import CrimeComplainform from './Component/pages/ComplainForm/CrimeComplalinform';
-<<<<<<< HEAD
-=======
 import NotFound from './Component/pages/NotFound/NotFound';
 import Emergency from './Component/pages/Emergency';
 import ComingPage from './Component/pages/ComingPage/ComingPage';
@@ -37,7 +35,6 @@ import Methodology from './Component/pages/Methodology/Methodology';
 import StanderGuideline from './Component/pages/Stander_Guideline/Stander_Guideline';
 import OurTeamMember from './Component/pages/OurTeamMember/OurTeamMember';
 // import PrivateRoute from './Component/pages/Contact/PrivateRoute';
->>>>>>> main
 
 
 
@@ -136,12 +133,8 @@ function App() {
         <Router>
         <Navigation></Navigation>
           <Switch>
-<<<<<<< HEAD
-      <Route path="/home">
-=======
             
             <Route path="/home">
->>>>>>> main
               <Home />
             </Route>
             <Route path="/cyberBulling">
@@ -162,15 +155,9 @@ function App() {
             <Route path="/resources">
               <Resources />
             </Route>
-<<<<<<< HEAD
-            <Route path="/contact">
-              <Contact />
-            </Route>
-=======
             {/* <PrivateRoute path="/contact">
               <Contact />
             </PrivateRoute> */}
->>>>>>> main
             <Route path="/courses">
               <Courses />
             </Route>
@@ -224,22 +211,15 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-<<<<<<< HEAD
-            <Footer></Footer>
-=======
 
             <Route path="*">
               <NotFound></NotFound>
             </Route>
 
->>>>>>> main
           </Switch>
           <Footer></Footer>
         </Router>
-<<<<<<< HEAD
-=======
         
->>>>>>> main
       </AuthProvider>
 
     </div>
