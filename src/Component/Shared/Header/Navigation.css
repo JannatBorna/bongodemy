@@ -1,4 +1,4 @@
-/* .navbarstyle {
+ /* .navbarstyle {
   background-color: #1E2D40 !important;
 }
 
@@ -45,6 +45,9 @@
   border-radius: 2px;
 }
 
+.buttonn {
+  background-color: #4CAF50; /* Green */
+
 /* .dropdown_color {
   color: black !important;
 } */
@@ -87,4 +90,4 @@
   background-color: #1E2D40 !important;
   color: white !important;
   font-family: cursive;
-} */ */
+}  */
