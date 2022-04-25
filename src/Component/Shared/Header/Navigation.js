@@ -1,4 +1,3 @@
-import { Button } from 'bootstrap';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
@@ -10,7 +9,7 @@ const Navigation = () => {
 
     return (
         <div >
-            
+
             <nav style={{ backgroundColor: "#1E2D40" }} className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <img width="200px" height="50px" src={logo} alt="" className='header_logo pe-3' />
@@ -66,7 +65,7 @@ const Navigation = () => {
                     {
                         user?.email ?
                             <button className='mt-1 mx-3' onClick={logOut}
-                            style={{ backgroundColor: "Aquamarine", border: 'none', padding: '5px', textAlign: 'center', fontSize: '15px', fontWeight: 'bold', display: 'inline-block', borderRadius: '4px' }}
+                                style={{ backgroundColor: "Aquamarine", border: 'none', padding: '5px', textAlign: 'center', fontSize: '15px', fontWeight: 'bold', display: 'inline-block', borderRadius: '4px' }}
 
                             >
                                 <Link className='text-black ms-2 text-decoration-none' to='/login'>Logout</Link>

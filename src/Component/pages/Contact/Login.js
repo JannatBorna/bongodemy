@@ -18,7 +18,7 @@ import { useHistory } from 'react-router-dom';
 const Login = () => {
 
     const [loginData, setLoginData] = useState({});
-    const { handleGoogleSignIn, handleGitSignin, loginUser, user, isLoading, error,  } = useAuth();
+    const { handleGoogleSignIn, handleGitSignin, loginUser, user, isLoading, error, } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -36,7 +36,7 @@ const Login = () => {
         window.location.reload();
     }
     const handleEmailPassLogin = e => {
-        loginUser(loginData.email, loginData.password,location,history)
+        loginUser(loginData.email, loginData.password, location, history)
         e.preventDefault();
 
     }
@@ -44,7 +44,7 @@ const Login = () => {
     return (
         <div>
             <div className='bg-col'>
-                <h3 className='text-white' style={{ margin: '25px',textAlign:'center', }}>Login</h3>
+                <h3 className='text-white' style={{ margin: '25px', textAlign: 'center', }}>Login</h3>
                 <div className='bg-color'>
                     <div className='row'>
                         <div className='col-md-5 marge-btm'>
@@ -63,7 +63,7 @@ const Login = () => {
                                             Password
                                         </h6>
                                     </Form.Label>
-                                    <Form.Control onChange={handleOnchange} id='form-color'className='bg-dark' type="password" placeholder='enter your password' />
+                                    <Form.Control onChange={handleOnchange} id='form-color' className='bg-dark' type="password" placeholder='enter your password' />
                                 </Form.Group>
 
                                 <Button id='btn-color' type="submit">
@@ -77,8 +77,8 @@ const Login = () => {
                             {error && <div className="alert alert-danger my-5" role="alert">
                                 {error}
                             </div>}
-                            <Button id='btn-color' className='my-4' onClick={handleGoogleSignIn} style={{ margin: '10px', width: '200px' }}> <span> <FcGoogle /> </span> Google Sign in </Button>
-                            <Button id='btn-color' className='my-4' onClick={handleGitSignin} style={{ margin: '10px', width: '200px' }}> <span> <FaGithub/> </span> Github Sign in </Button>
+                            <Button id='btn-color' className='mt-3' onClick={handleGoogleSignIn} style={{ margin: '10px', width: '200px' }}> <span> <FcGoogle /> </span> Google Sign in </Button>
+                            <Button id='btn-color' className='mt-3' onClick={handleGitSignin} style={{ margin: '10px', width: '200px' }}> <span> <FaGithub /> </span> Github Sign in </Button>
 
                             {user?.email && <div className="alert alert-success" role="alert">
                                 Login Successful !!!
@@ -93,7 +93,7 @@ const Login = () => {
                 </div>
             </div>
             {
- <h5 className='text-white' style={{ margin: '25px',textAlign:'center', }} > New user? please <Link to="/register">register</Link></h5>
+                <h5 className='text-white' style={{ margin: '25px', textAlign: 'center',marginBottom:"50px",marginTop:"0px" }} > New user? please <Link to="/register">register</Link></h5>
 
             }
         </div>
