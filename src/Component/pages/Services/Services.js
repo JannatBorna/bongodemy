@@ -36,7 +36,7 @@ const Services = () => {
                             style={{ width: 200, height: 200, background: "rgba(0, 0, 0, 0)" }}
                         />
                         <h5 className="">Web Design & Development</h5>
-                        <p className='text-white'>Provide All kainds of website</p>
+                        <p className='text-white'>Provide All kinds of website</p>
 
 
                         <button type="button" style={{ backgroundColor: "#1E2D40" }} class="border-0 text-white p-1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -134,7 +134,7 @@ const Services = () => {
                             style={{ width: 250, height: 200, background: "rgba(0, 0, 0, 0)" }}
                         />
                         <h5 className="">Secured Software Development</h5>
-                        <p className='text-white p-1'>Weare Secured Software Development</p>
+                        <p className='text-white p-1'>Provide all kinds of softwers security</p>
 
 
                         <button type="button" style={{ backgroundColor: "#1E2D40" }} class="text-white mb-3 border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">

@@ -1,0 +1,48 @@
+[debug] [2022-04-25T19:07:35.677Z] ----------------------------------------------------------------------
+[debug] [2022-04-25T19:07:35.688Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kasir Ahmod\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-25T19:07:35.690Z] CLI Version:   10.4.1
+[debug] [2022-04-25T19:07:35.690Z] Platform:      win32
+[debug] [2022-04-25T19:07:35.690Z] Node Version:  v16.13.1
+[debug] [2022-04-25T19:07:35.692Z] Time:          Tue Apr 26 2022 01:07:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-25T19:07:35.693Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-25T19:07:36.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-25T19:07:36.393Z] > authorizing via signed-in user (ahmod.fateh@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\myweb\bongodemy
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-25T19:07:45.361Z] Using project from CLI flag: bongodemy-login
+[debug] [2022-04-25T19:07:45.365Z] > refreshing access token with scopes: []
+[debug] [2022-04-25T19:07:45.367Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-25T19:07:46.447Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 25 Apr 2022 19:07:43 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-25T19:07:46.505Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bongodemy-login [none]
+[debug] [2022-04-25T19:07:47.186Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bongodemy-login 403
+[debug] [2022-04-25T19:07:47.187Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bongodemy-login {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-04-25T19:07:47.188Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-04-25T19:07:47.545Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Kasir Ahmod\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\Kasir Ahmod\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project bongodemy-login. Please make sure the project exists and your account has permission to access it.
